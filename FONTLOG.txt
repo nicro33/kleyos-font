@@ -1,0 +1,12 @@
+FONTLOG for Kleyos
+
+Version 1.0.0 — 2026
+- First public release.
+- Display and Text families.
+- French accented Latin coverage.
+- Zodiac symbols.
+- Finalized punctuation spacing.
+- Reworked diacritics.
+- Capital A accents aligned optically to the apex.
+- Capital Ç cedilla micro-corrected for weight and attachment.
+- WOFF2 webfonts added.
