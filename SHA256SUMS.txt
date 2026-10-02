@@ -1,0 +1,4 @@
+4f46a8c7aed09f6cb3633a5c46fddfef3d4de6448d65c0536c18d9e2ae54b573  fonts/ttf/Kleyos-Display.ttf
+fe6b7ed1d3273f2fdeae7268e720d69b45710810bc2634ddf80e1965d711a993  fonts/ttf/Kleyos-Text.ttf
+7b5202803d641b15718e179c66823a185dfde7ec219bd0c38a60733fff3e12e5  fonts/woff2/Kleyos-Display.woff2
+46b7a5fd7067aa6394c868a6149a1a3bb80a0016d7be3002cb3be63f6842ed6c  fonts/woff2/Kleyos-Text.woff2
