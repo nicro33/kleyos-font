@@ -1,0 +1,19 @@
+/* Kleyos 1.0.0 — SIL Open Font License 1.1 */
+@font-face {
+  font-family: "Kleyos Display";
+  src: url("../fonts/woff2/Kleyos-Display.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Kleyos Text";
+  src: url("../fonts/woff2/Kleyos-Text.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.kleyos-display { font-family: "Kleyos Display", cursive; }
+.kleyos-text { font-family: "Kleyos Text", cursive; }
