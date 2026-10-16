@@ -1,11 +1,11 @@
 # Changelog
 
+## 1.1.0
+- Public build based on internal Kleyos H2-i25b-balanced.
+- Updated question marks and punctuation alignment from the H2 refinement cycle.
+- Updated eszett forms from the H2 refinement cycle.
+- Balanced horizontal spacing candidate selected for publication.
+- TTF and WOFF2 builds regenerated with public filenames.
+
 ## 1.0.0
-- Public release derived from internal Kleyos V1.4-F.
-- Public OpenType metadata.
-- Installable embedding enabled (`fsType = 0`).
-- Vendor ID `KLYS`.
-- TTF and WOFF2 builds.
-- Web CSS package.
-- QA and specimen assets.
-- Reserved Font Name declared: `Kleyos`.
+- Initial public release.
