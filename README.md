@@ -31,7 +31,7 @@ l'application. Pour héberger la police soi-même, copier ensemble les dossiers
 Le dépôt public peut aussi être servi par jsDelivr avec une version fixe :
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicro33/kleyos-font@v1.2.0/css/kleyos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicro33/kleyos-font@b4412dec8b36b763e583524f922d0ebc2b91d3d6/css/kleyos.css">
 <h1 class="kleyos-display">L’ÂME — LE CŒUR</h1>
 <p class="kleyos-text">¿Qué está cambiando? ¡Elige tu camino!</p>
 ```

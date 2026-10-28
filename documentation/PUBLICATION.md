@@ -13,8 +13,9 @@ et rend la version courante explicite.
 3. Actualiser README, CHANGELOG, FONTLOG, manifeste, CSS et sommes SHA-256.
 4. Vérifier la conversion WOFF2 et le chargement web ; conserver les limites
    des contrôles. Les tests Google Fonts ne valent pas une admission au catalogue.
-5. Construire l'archive versionnée dans `dist/`, publier le commit et un tag
-   immuable. Une page GitHub Release peut être ajoutée à ce tag indépendamment.
+5. Construire l'archive versionnée dans `dist/`, publier le commit et vérifier
+   sa référence immuable. Ajouter un tag sémantique et une page GitHub Release
+   lorsque ces opérations sont disponibles.
 6. Vérifier les fichiers sur GitHub et les URL web avec version explicite.
 
 ## Version 1.2.0
@@ -32,10 +33,10 @@ fondée sur des sources de dessin éditables UFO/Glyphs.
 ## Police web et catalogue
 
 Les WOFF2 peuvent être hébergées et chargées avec `@font-face`, sans inscription
-dans un catalogue. Le tag public permet aussi la distribution par jsDelivr :
+dans un catalogue. Une référence immuable de commit permet la distribution par jsDelivr :
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicro33/kleyos-font@v1.2.0/css/kleyos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicro33/kleyos-font@b4412dec8b36b763e583524f922d0ebc2b91d3d6/css/kleyos.css">
 ```
 
 L'inscription à **Google Fonts** est une démarche distincte. Le dépôt et la
@@ -60,3 +61,10 @@ Références officielles vérifiées le 28 octobre 2026 :
 
 Une demande Google Fonts et la signature du CLA ne font pas partie de cette
 publication GitHub ; aucun statut d'admission n'est revendiqué.
+
+## État de la diffusion du 29 octobre 2026
+
+La version 1.2.0 est publiée sur la branche principale. Les URL web utilisent
+le commit public immuable `b4412dec8b36b763e583524f922d0ebc2b91d3d6`, dont les fontes
+sont identiques aux binaires de cette distribution. Le tag sémantique `v1.2.0`
+n'a pas encore été créé sur GitHub ; il ne conditionne pas ces URL par commit.
