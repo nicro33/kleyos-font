@@ -1,0 +1,220 @@
+{
+  "fontbakery": "0.12.10",
+  "profile": "googlefonts",
+  "network_checks": "skipped",
+  "families": {
+    "Display": {
+      "results": {
+        "(not finished)": 0,
+        "FAIL": 9,
+        "INFO": 8,
+        "PASS": 88,
+        "SKIP": 136,
+        "WARN": 10
+      },
+      "problems": [
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/code_pages>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "no-code-pages",
+              "message": "No code pages defined in the OS/2 table ulCodePageRange1 and CodePageRange2 fields."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/license/OFL_copyright>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-format",
+              "message": "First line in license file is:\n\n\"copyright (c) 2026 nicolas gros.\"\n\nwhich does not match the expected format, similar to:\n\n\"Copyright 2022 The Familyname Project Authors (git url)\""
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/canonical_filename>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-filename",
+              "message": "Expected \"KleyosDisplay-Regular.ttf. Got Kleyos-Display.ttf."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/font_copyright>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-notice-format",
+              "message": "Name Table entry: Copyright notices should match a pattern similar to:\n\n \"Copyright 2020 The Familyname Project Authors (git url)\"\n\nBut instead we have got:\n\n\"Copyright (c) 2026 Nicolas Gros.\""
+            },
+            {
+              "code": "bad-notice-format",
+              "message": "Name Table entry: Copyright notices should match a pattern similar to:\n\n \"Copyright 2020 The Familyname Project Authors (git url)\"\n\nBut instead we have got:\n\n\"Copyright (c) 2026 Nicolas Gros.\""
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/font_names>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-names",
+              "message": "Font names are incorrect:\n\n| nameID | current | expected |\n| :--- | :--- | :--- |\n| Family Name | Kleyos Display | Kleyos Display |\n| Subfamily Name | Regular | Regular |\n| Full Name | Kleyos Display Regular | Kleyos Display Regular |\n| Postscript Name | KleyosDisplay-Regular | KleyosDisplay-Regular |\n| Typographic Family Name | **Kleyos Display** | **N/A** |\n| Typographic Subfamily Name | **Regular** | **N/A** |"
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/gasp>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "lacks-gasp",
+              "message": "Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.\nIf you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'\nGFTools is available at https://pypi.org/project/gftools/"
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/glyph_coverage>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "missing-codepoints",
+              "message": "Missing required codepoints:\n\n\t- 0x0023 (NUMBER SIGN)\n\n\n\t- 0x0024 (DOLLAR SIGN)\n\n\n\t- 0x0026 (AMPERSAND)\n\n\n\t- 0x0040 (COMMERCIAL AT)\n\n\n\t- 0x005E (CIRCUMFLEX ACCENT)\n\n\n\t- 0x0060 (GRAVE ACCENT)\n\n\n\t- 0x007C (VERTICAL LINE)\n\n\n\t- 0x007E (TILDE)\n\n\n\t- 0x00A2 (CENT SIGN)\n\n\n\t- 0x00A3 (POUND SIGN)\n\n\n\t- 153 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "missing-os2-fsselection-bit7",
+              "message": "OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kleyos-Display.ttf']."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/smart_dropout>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "lacks-smart-dropout",
+              "message": "The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script."
+            }
+          ]
+        }
+      ]
+    },
+    "Text": {
+      "results": {
+        "(not finished)": 0,
+        "FAIL": 9,
+        "INFO": 8,
+        "PASS": 88,
+        "SKIP": 136,
+        "WARN": 10
+      },
+      "problems": [
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/code_pages>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "no-code-pages",
+              "message": "No code pages defined in the OS/2 table ulCodePageRange1 and CodePageRange2 fields."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/license/OFL_copyright>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-format",
+              "message": "First line in license file is:\n\n\"copyright (c) 2026 nicolas gros.\"\n\nwhich does not match the expected format, similar to:\n\n\"Copyright 2022 The Familyname Project Authors (git url)\""
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/canonical_filename>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-filename",
+              "message": "Expected \"KleyosText-Regular.ttf. Got Kleyos-Text.ttf."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/font_copyright>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-notice-format",
+              "message": "Name Table entry: Copyright notices should match a pattern similar to:\n\n \"Copyright 2020 The Familyname Project Authors (git url)\"\n\nBut instead we have got:\n\n\"Copyright (c) 2026 Nicolas Gros.\""
+            },
+            {
+              "code": "bad-notice-format",
+              "message": "Name Table entry: Copyright notices should match a pattern similar to:\n\n \"Copyright 2020 The Familyname Project Authors (git url)\"\n\nBut instead we have got:\n\n\"Copyright (c) 2026 Nicolas Gros.\""
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/font_names>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "bad-names",
+              "message": "Font names are incorrect:\n\n| nameID | current | expected |\n| :--- | :--- | :--- |\n| Family Name | Kleyos Text | Kleyos Text |\n| Subfamily Name | Regular | Regular |\n| Full Name | Kleyos Text Regular | Kleyos Text Regular |\n| Postscript Name | KleyosText-Regular | KleyosText-Regular |\n| Typographic Family Name | **Kleyos Text** | **N/A** |\n| Typographic Subfamily Name | **Regular** | **N/A** |"
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/gasp>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "lacks-gasp",
+              "message": "Font is missing the 'gasp' table. Try exporting the font with autohinting enabled.\nIf you are dealing with an unhinted font, it can be fixed by running the fonts through the command 'gftools fix-nonhinting'\nGFTools is available at https://pypi.org/project/gftools/"
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/glyph_coverage>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "missing-codepoints",
+              "message": "Missing required codepoints:\n\n\t- 0x0023 (NUMBER SIGN)\n\n\n\t- 0x0024 (DOLLAR SIGN)\n\n\n\t- 0x0026 (AMPERSAND)\n\n\n\t- 0x0040 (COMMERCIAL AT)\n\n\n\t- 0x005E (CIRCUMFLEX ACCENT)\n\n\n\t- 0x0060 (GRAVE ACCENT)\n\n\n\t- 0x007C (VERTICAL LINE)\n\n\n\t- 0x007E (TILDE)\n\n\n\t- 0x00A2 (CENT SIGN)\n\n\n\t- 0x00A3 (POUND SIGN)\n\n\n\t- 153 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/os2/use_typo_metrics>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "missing-os2-fsselection-bit7",
+              "message": "OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kleyos-Text.ttf']."
+            }
+          ]
+        },
+        {
+          "check": "<FontBakeryCheck:com.google.fonts/check/smart_dropout>",
+          "status": "FAIL",
+          "messages": [
+            {
+              "code": "lacks-smart-dropout",
+              "message": "The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script."
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "google_fonts_admission_ready": false
+}

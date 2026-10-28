@@ -1,16 +1,17 @@
+/* Kleyos 1.2.0 — SIL Open Font License 1.1; Reserved Font Name: Kleyos. */
 @font-face {
   font-family: 'Kleyos Display';
-  src: url('../fonts/woff2/Kleyos-Display.woff2') format('woff2');
+  src: url('../fonts/woff2/Kleyos-Display.woff2?v=1.2.0') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Kleyos Text';
-  src: url('../fonts/woff2/Kleyos-Text.woff2') format('woff2');
+  src: url('../fonts/woff2/Kleyos-Text.woff2?v=1.2.0') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-.kleyos-display { font-family: 'Kleyos Display', sans-serif; }
-.kleyos-text { font-family: 'Kleyos Text', sans-serif; }
+.kleyos-display { font-family: 'Kleyos Display', sans-serif; font-kerning: normal; }
+.kleyos-text { font-family: 'Kleyos Text', sans-serif; font-kerning: normal; }

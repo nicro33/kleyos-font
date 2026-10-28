@@ -1,0 +1,606 @@
+{
+  "Display": {
+    "checks": {
+      "ascii_letter_contours_identical": true,
+      "digits_contours_identical": true,
+      "zodiac_contours_identical": true,
+      "existing_character_coverage_preserved": true,
+      "target_characters_covered": true,
+      "notdef_visible": true,
+      "four_language_samples_no_missing_glyph": true,
+      "nfc_nfd_geometry_identical": true,
+      "gpos_pair_adjustments_match": true,
+      "woff2_outlines_identical": true,
+      "woff2_metrics_identical": true,
+      "pair_collision_scan_passed": true,
+      "punctuation_axis_within_5_units": true,
+      "vertical_metrics_cover_glyphs": true,
+      "cedilla_base_letters_unchanged": true,
+      "question_mark_curves_preserved": true
+    },
+    "check_count": 16,
+    "passed": true,
+    "coverage_count": 170,
+    "new_characters": [
+      " ",
+      "·",
+      "Æ",
+      "Î",
+      "Ï",
+      "Ô",
+      "Ù",
+      "Û",
+      "Œ",
+      "Ÿ",
+      "…",
+      " "
+    ],
+    "changed_existing_glyphs": [
+      "!",
+      ",",
+      ".",
+      ":",
+      ";",
+      "?",
+      "¡",
+      "¿",
+      "Â",
+      "Ç",
+      "Ñ",
+      "Ú",
+      "Ü",
+      "ç",
+      "ñ"
+    ],
+    "unchanged_existing_glyph_count": 143,
+    "pair_characters": 123,
+    "pairs_checked": 15129,
+    "collisions": [],
+    "axis_metrics": {
+      "!": {
+        "u": [
+          73.77073641424913,
+          73.36377782695243
+        ],
+        "delta": 0.40695858729669965
+      },
+      "¡": {
+        "u": [
+          73.77452570361655,
+          74.02803085149807
+        ],
+        "delta": 0.2535051478815262
+      },
+      ":": {
+        "u": [
+          73.2336872766505,
+          73.44251063902435
+        ],
+        "delta": 0.2088233623738489
+      }
+    },
+    "normalization": [
+      {
+        "text": "é",
+        "identical": true
+      },
+      {
+        "text": "à",
+        "identical": true
+      },
+      {
+        "text": "ê",
+        "identical": true
+      },
+      {
+        "text": "ñ",
+        "identical": true
+      },
+      {
+        "text": "Ü",
+        "identical": true
+      },
+      {
+        "text": "Î",
+        "identical": true
+      },
+      {
+        "text": "Ï",
+        "identical": true
+      },
+      {
+        "text": "Ÿ",
+        "identical": true
+      },
+      {
+        "text": "Ù",
+        "identical": true
+      },
+      {
+        "text": "Û",
+        "identical": true
+      },
+      {
+        "text": "L’ÂME",
+        "identical": true
+      },
+      {
+        "text": "AÎNÉ",
+        "identical": true
+      },
+      {
+        "text": "PINGÜINO",
+        "identical": true
+      }
+    ],
+    "kerning_tests": [
+      {
+        "pair": "AV",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "VA",
+        "expected": -78,
+        "observed": -78,
+        "passed": true
+      },
+      {
+        "pair": "To",
+        "expected": -128,
+        "observed": -128,
+        "passed": true
+      },
+      {
+        "pair": "Ta",
+        "expected": -132,
+        "observed": -132,
+        "passed": true
+      },
+      {
+        "pair": "nn",
+        "expected": -24,
+        "observed": -24,
+        "passed": true
+      },
+      {
+        "pair": "no",
+        "expected": -28,
+        "observed": -28,
+        "passed": true
+      },
+      {
+        "pair": "on",
+        "expected": 10,
+        "observed": 10,
+        "passed": true
+      },
+      {
+        "pair": "oo",
+        "expected": 10,
+        "observed": 10,
+        "passed": true
+      },
+      {
+        "pair": "l’",
+        "expected": -12,
+        "observed": -12,
+        "passed": true
+      },
+      {
+        "pair": "’e",
+        "expected": -8,
+        "observed": -8,
+        "passed": true
+      },
+      {
+        "pair": "ÂV",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "ÄÖ",
+        "expected": -28,
+        "observed": -28,
+        "passed": true
+      },
+      {
+        "pair": "ÑÑ",
+        "expected": 12,
+        "observed": 12,
+        "passed": true
+      },
+      {
+        "pair": "ÎÎ",
+        "expected": 40,
+        "observed": 40,
+        "passed": true
+      },
+      {
+        "pair": "ŒU",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "ÆT",
+        "expected": -150,
+        "observed": -150,
+        "passed": true
+      }
+    ],
+    "missing_in_samples": {},
+    "line_widths": [
+      {
+        "text": "AVATAR  VAGUE  VOYAGE  AVANT",
+        "i30_units": 11465,
+        "i31_units": 10507,
+        "change_percent": -8.36
+      },
+      {
+        "text": "Toi  Ta voie  Today  YOUR VOICE",
+        "i30_units": 11109,
+        "i31_units": 10533,
+        "change_percent": -5.18
+      },
+      {
+        "text": "minimum  illumination  ouvrir",
+        "i30_units": 10190,
+        "i31_units": 9596,
+        "change_percent": -5.83
+      },
+      {
+        "text": "l’esprit  aujourd’hui  d’abord",
+        "i30_units": 9544,
+        "i31_units": 9000,
+        "change_percent": -5.7
+      },
+      {
+        "text": "Oui!  Non?  un point.  puis:  un choix;",
+        "i30_units": 12486,
+        "i31_units": 11926,
+        "change_percent": -4.49
+      },
+      {
+        "text": "Größe größer ÄÖÜ STRAẞE",
+        "i30_units": 9277,
+        "i31_units": 8726,
+        "change_percent": -5.94
+      },
+      {
+        "text": "¿Qué está cambiando? ¡Elige tu camino!",
+        "i30_units": 13883,
+        "i31_units": 12937,
+        "change_percent": -6.81
+      },
+      {
+        "text": "INTUICIÓN  AÑO  PINGÜINO",
+        "i30_units": 9087,
+        "i31_units": 8695,
+        "change_percent": -4.31
+      },
+      {
+        "text": "Today’s choice: what’s opening?",
+        "i30_units": 10541,
+        "i31_units": 10032,
+        "change_percent": -4.83
+      }
+    ],
+    "vertical_metrics": {
+      "bounds": [
+        0,
+        -220,
+        868,
+        940
+      ],
+      "windows": [
+        1000,
+        220
+      ]
+    }
+  },
+  "Text": {
+    "checks": {
+      "ascii_letter_contours_identical": true,
+      "digits_contours_identical": true,
+      "zodiac_contours_identical": true,
+      "existing_character_coverage_preserved": true,
+      "target_characters_covered": true,
+      "notdef_visible": true,
+      "four_language_samples_no_missing_glyph": true,
+      "nfc_nfd_geometry_identical": true,
+      "gpos_pair_adjustments_match": true,
+      "woff2_outlines_identical": true,
+      "woff2_metrics_identical": true,
+      "pair_collision_scan_passed": true,
+      "punctuation_axis_within_5_units": true,
+      "vertical_metrics_cover_glyphs": true,
+      "cedilla_base_letters_unchanged": true,
+      "question_mark_curves_preserved": true
+    },
+    "check_count": 16,
+    "passed": true,
+    "coverage_count": 170,
+    "new_characters": [
+      " ",
+      "·",
+      "Æ",
+      "Î",
+      "Ï",
+      "Ô",
+      "Ù",
+      "Û",
+      "Œ",
+      "Ÿ",
+      "…",
+      " "
+    ],
+    "changed_existing_glyphs": [
+      "!",
+      ",",
+      ".",
+      ":",
+      ";",
+      "?",
+      "¡",
+      "¿",
+      "Â",
+      "Ç",
+      "Ñ",
+      "Ú",
+      "Ü",
+      "ç",
+      "ñ"
+    ],
+    "unchanged_existing_glyph_count": 143,
+    "pair_characters": 123,
+    "pairs_checked": 15129,
+    "collisions": [],
+    "axis_metrics": {
+      "!": {
+        "u": [
+          73.77073641424913,
+          73.36377782695243
+        ],
+        "delta": 0.40695858729669965
+      },
+      "¡": {
+        "u": [
+          73.77452570361655,
+          74.02803085149807
+        ],
+        "delta": 0.2535051478815262
+      },
+      ":": {
+        "u": [
+          73.2336872766505,
+          73.44251063902435
+        ],
+        "delta": 0.2088233623738489
+      }
+    },
+    "normalization": [
+      {
+        "text": "é",
+        "identical": true
+      },
+      {
+        "text": "à",
+        "identical": true
+      },
+      {
+        "text": "ê",
+        "identical": true
+      },
+      {
+        "text": "ñ",
+        "identical": true
+      },
+      {
+        "text": "Ü",
+        "identical": true
+      },
+      {
+        "text": "Î",
+        "identical": true
+      },
+      {
+        "text": "Ï",
+        "identical": true
+      },
+      {
+        "text": "Ÿ",
+        "identical": true
+      },
+      {
+        "text": "Ù",
+        "identical": true
+      },
+      {
+        "text": "Û",
+        "identical": true
+      },
+      {
+        "text": "L’ÂME",
+        "identical": true
+      },
+      {
+        "text": "AÎNÉ",
+        "identical": true
+      },
+      {
+        "text": "PINGÜINO",
+        "identical": true
+      }
+    ],
+    "kerning_tests": [
+      {
+        "pair": "AV",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "VA",
+        "expected": -78,
+        "observed": -78,
+        "passed": true
+      },
+      {
+        "pair": "To",
+        "expected": -128,
+        "observed": -128,
+        "passed": true
+      },
+      {
+        "pair": "Ta",
+        "expected": -132,
+        "observed": -132,
+        "passed": true
+      },
+      {
+        "pair": "nn",
+        "expected": -24,
+        "observed": -24,
+        "passed": true
+      },
+      {
+        "pair": "no",
+        "expected": -28,
+        "observed": -28,
+        "passed": true
+      },
+      {
+        "pair": "on",
+        "expected": 10,
+        "observed": 10,
+        "passed": true
+      },
+      {
+        "pair": "oo",
+        "expected": 10,
+        "observed": 10,
+        "passed": true
+      },
+      {
+        "pair": "l’",
+        "expected": -12,
+        "observed": -12,
+        "passed": true
+      },
+      {
+        "pair": "’e",
+        "expected": -8,
+        "observed": -8,
+        "passed": true
+      },
+      {
+        "pair": "ÂV",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "ÄÖ",
+        "expected": -28,
+        "observed": -28,
+        "passed": true
+      },
+      {
+        "pair": "ÑÑ",
+        "expected": 12,
+        "observed": 12,
+        "passed": true
+      },
+      {
+        "pair": "ÎÎ",
+        "expected": 40,
+        "observed": 40,
+        "passed": true
+      },
+      {
+        "pair": "ŒU",
+        "expected": -46,
+        "observed": -46,
+        "passed": true
+      },
+      {
+        "pair": "ÆT",
+        "expected": -150,
+        "observed": -150,
+        "passed": true
+      }
+    ],
+    "missing_in_samples": {},
+    "line_widths": [
+      {
+        "text": "AVATAR  VAGUE  VOYAGE  AVANT",
+        "i30_units": 11585,
+        "i31_units": 10627,
+        "change_percent": -8.27
+      },
+      {
+        "text": "Toi  Ta voie  Today  YOUR VOICE",
+        "i30_units": 11269,
+        "i31_units": 10693,
+        "change_percent": -5.11
+      },
+      {
+        "text": "minimum  illumination  ouvrir",
+        "i30_units": 10270,
+        "i31_units": 9676,
+        "change_percent": -5.78
+      },
+      {
+        "text": "l’esprit  aujourd’hui  d’abord",
+        "i30_units": 9624,
+        "i31_units": 9080,
+        "change_percent": -5.65
+      },
+      {
+        "text": "Oui!  Non?  un point.  puis:  un choix;",
+        "i30_units": 12686,
+        "i31_units": 12126,
+        "change_percent": -4.41
+      },
+      {
+        "text": "Größe größer ÄÖÜ STRAẞE",
+        "i30_units": 9337,
+        "i31_units": 8786,
+        "change_percent": -5.9
+      },
+      {
+        "text": "¿Qué está cambiando? ¡Elige tu camino!",
+        "i30_units": 13983,
+        "i31_units": 13037,
+        "change_percent": -6.77
+      },
+      {
+        "text": "INTUICIÓN  AÑO  PINGÜINO",
+        "i30_units": 9167,
+        "i31_units": 8775,
+        "change_percent": -4.28
+      },
+      {
+        "text": "Today’s choice: what’s opening?",
+        "i30_units": 10601,
+        "i31_units": 10092,
+        "change_percent": -4.8
+      }
+    ],
+    "vertical_metrics": {
+      "bounds": [
+        0,
+        -220,
+        868,
+        940
+      ],
+      "windows": [
+        1000,
+        220
+      ]
+    }
+  }
+}

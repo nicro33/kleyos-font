@@ -1,0 +1,78 @@
+{
+  "name": "Kleyos",
+  "version": "1.2.0",
+  "date": "2026-10-28",
+  "source_iteration": "H2-i31-Assemblages",
+  "license": "OFL-1.1",
+  "reserved_font_name": "Kleyos",
+  "repository": "https://github.com/nicro33/kleyos-font",
+  "tag": "v1.2.0",
+  "source_drawings_and_positioning_unchanged": true,
+  "fontbakery_googlefonts_acceptance": false,
+  "fonts": [
+    {
+      "role": "Display",
+      "source": "sources/validated-i31/Kleyos-Display-i31-Assemblages.ttf",
+      "source_sha256": "6b6b5ffa2a7b5b5f22ae86189be35bbf091fc5ba3e65662a1951f74e60cd016d",
+      "family": "Kleyos Display",
+      "public_semver": "1.2.0",
+      "opentype_version": "1.310",
+      "identical_source_tables_except_head_and_name": [
+        "hhea",
+        "maxp",
+        "OS/2",
+        "hmtx",
+        "cmap",
+        "loca",
+        "glyf",
+        "kern",
+        "post",
+        "GPOS"
+      ],
+      "woff2_roundtrip_tables_match": true,
+      "codepoints": 170,
+      "ttf": {
+        "path": "fonts/ttf/Kleyos-Display.ttf",
+        "sha256": "a977fdaaef56c96d35c236c99a0e0f04fffd67783176ae13e8fad1ea8d0c21c3",
+        "size_bytes": 171624
+      },
+      "woff2": {
+        "path": "fonts/woff2/Kleyos-Display.woff2",
+        "sha256": "9c03ae7c881a68bab7336ffdbf3d60b48e4535899862b97bb5d90de317d60b7a",
+        "size_bytes": 29104
+      }
+    },
+    {
+      "role": "Text",
+      "source": "sources/validated-i31/Kleyos-Text-i31-Assemblages.ttf",
+      "source_sha256": "6cc2aacb5555222b59297da16360df3e225fe879a7fb5bada46c8920044d8478",
+      "family": "Kleyos Text",
+      "public_semver": "1.2.0",
+      "opentype_version": "1.310",
+      "identical_source_tables_except_head_and_name": [
+        "hhea",
+        "maxp",
+        "OS/2",
+        "hmtx",
+        "cmap",
+        "loca",
+        "glyf",
+        "kern",
+        "post",
+        "GPOS"
+      ],
+      "woff2_roundtrip_tables_match": true,
+      "codepoints": 170,
+      "ttf": {
+        "path": "fonts/ttf/Kleyos-Text.ttf",
+        "sha256": "b5b6b2846383bf628af6d2b69eb7ffb48b51c1f8e06c035a83a070f046ffa69c",
+        "size_bytes": 171588
+      },
+      "woff2": {
+        "path": "fonts/woff2/Kleyos-Text.woff2",
+        "sha256": "436b9a49963dd47b6c123aebe9ffcd90169cf68067c73744e989f480ff5c2712",
+        "size_bytes": 29048
+      }
+    }
+  ]
+}

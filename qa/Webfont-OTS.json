@@ -1,0 +1,30 @@
+{
+  "tool": "OpenType Sanitizer 9.2.0",
+  "results": [
+    {
+      "path": "fonts/ttf/Kleyos-Display.ttf",
+      "exit_code": 0,
+      "passed": true,
+      "output": "File sanitized successfully!\n"
+    },
+    {
+      "path": "fonts/ttf/Kleyos-Text.ttf",
+      "exit_code": 0,
+      "passed": true,
+      "output": "File sanitized successfully!\n"
+    },
+    {
+      "path": "fonts/woff2/Kleyos-Display.woff2",
+      "exit_code": 0,
+      "passed": true,
+      "output": "File sanitized successfully!\n"
+    },
+    {
+      "path": "fonts/woff2/Kleyos-Text.woff2",
+      "exit_code": 0,
+      "passed": true,
+      "output": "File sanitized successfully!\n"
+    }
+  ],
+  "browser_rendering": "not_verified; browser executable installation unavailable in this environment"
+}

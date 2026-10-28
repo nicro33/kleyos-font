@@ -10,3 +10,8 @@ Version 1.0.0 — 2026
 - Capital A accents aligned optically to the apex.
 - Capital Ç cedilla micro-corrected for weight and attachment.
 - WOFF2 webfonts added.
+
+Version 1.2.0 — 2026-10-28
+- Published H2-i31 Assemblages with stable public family names.
+- OpenType Version 1.310; no changes to i31 outlines or positioning.
+- Google Fonts admission is pending; see documentation/PUBLICATION.md.

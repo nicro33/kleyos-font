@@ -1,0 +1,43 @@
+{
+  "fontconfig_match": "/workspace/scratch/5c43672b9536/font-work-i31/stages/i31-Assemblages/fonts/Kleyos-Text-i31-Assemblages.ttf",
+  "font_family": "Kleyos Text i31-Assemblages",
+  "inkscape_version": "Inkscape 1.2.2 (b0a8486541, 2022-12-01)",
+  "text_converted_to_paths": true,
+  "samples": [
+    {
+      "text": "AVATAR Toi l’esprit ŒUVRE ÇA CHANGE",
+      "reference_box": [
+        58,
+        1312,
+        38,
+        132
+      ],
+      "inkscape_box": [
+        58,
+        1312,
+        38,
+        132
+      ],
+      "width_delta_pixels": 0,
+      "passed": true
+    },
+    {
+      "text": "¿Qué está cambiando? ¡Elige tu camino!",
+      "reference_box": [
+        54,
+        1101,
+        30,
+        106
+      ],
+      "inkscape_box": [
+        54,
+        1101,
+        30,
+        106
+      ],
+      "width_delta_pixels": 0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

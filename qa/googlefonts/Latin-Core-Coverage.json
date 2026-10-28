@@ -1,0 +1,832 @@
+{
+  "reference": "https://github.com/googlefonts/glyphsets/blob/main/data/results/txt/nice-names/GF_Latin_Core.txt",
+  "date": "2026-10-28",
+  "reference_glyph_names": 324,
+  "required_unicode_codepoints": 319,
+  "font_codepoints": 170,
+  "missing_count": 163,
+  "missing": [
+    {
+      "name": "dollar",
+      "codepoint": "U+0024",
+      "character": "$"
+    },
+    {
+      "name": "ampersand",
+      "codepoint": "U+0026",
+      "character": "&"
+    },
+    {
+      "name": "at",
+      "codepoint": "U+0040",
+      "character": "@"
+    },
+    {
+      "name": "asciicircum",
+      "codepoint": "U+005E",
+      "character": "^"
+    },
+    {
+      "name": "bar",
+      "codepoint": "U+007C",
+      "character": "|"
+    },
+    {
+      "name": "asciitilde",
+      "codepoint": "U+007E",
+      "character": "~"
+    },
+    {
+      "name": "cent",
+      "codepoint": "U+00A2",
+      "character": "¢"
+    },
+    {
+      "name": "sterling",
+      "codepoint": "U+00A3",
+      "character": "£"
+    },
+    {
+      "name": "yen",
+      "codepoint": "U+00A5",
+      "character": "¥"
+    },
+    {
+      "name": "section",
+      "codepoint": "U+00A7",
+      "character": "§"
+    },
+    {
+      "name": "copyright",
+      "codepoint": "U+00A9",
+      "character": "©"
+    },
+    {
+      "name": "registered",
+      "codepoint": "U+00AE",
+      "character": "®"
+    },
+    {
+      "name": "paragraph",
+      "codepoint": "U+00B6",
+      "character": "¶"
+    },
+    {
+      "name": "euro",
+      "codepoint": "U+20AC",
+      "character": "€"
+    },
+    {
+      "name": "trademark",
+      "codepoint": "U+2122",
+      "character": "™"
+    },
+    {
+      "name": "minus",
+      "codepoint": "U+2212",
+      "character": "−"
+    },
+    {
+      "name": "numbersign",
+      "codepoint": "U+0023",
+      "character": "#"
+    },
+    {
+      "name": "guilsinglleft",
+      "codepoint": "U+2039",
+      "character": "‹"
+    },
+    {
+      "name": "guilsinglright",
+      "codepoint": "U+203A",
+      "character": "›"
+    },
+    {
+      "name": "grave",
+      "codepoint": "U+0060",
+      "character": "`"
+    },
+    {
+      "name": "dieresis",
+      "codepoint": "U+00A8",
+      "character": "¨"
+    },
+    {
+      "name": "macron",
+      "codepoint": "U+00AF",
+      "character": "¯"
+    },
+    {
+      "name": "acute",
+      "codepoint": "U+00B4",
+      "character": "´"
+    },
+    {
+      "name": "cedilla",
+      "codepoint": "U+00B8",
+      "character": "¸"
+    },
+    {
+      "name": "circumflex",
+      "codepoint": "U+02C6",
+      "character": "ˆ"
+    },
+    {
+      "name": "caron",
+      "codepoint": "U+02C7",
+      "character": "ˇ"
+    },
+    {
+      "name": "breve",
+      "codepoint": "U+02D8",
+      "character": "˘"
+    },
+    {
+      "name": "dotaccent",
+      "codepoint": "U+02D9",
+      "character": "˙"
+    },
+    {
+      "name": "ring",
+      "codepoint": "U+02DA",
+      "character": "˚"
+    },
+    {
+      "name": "ogonek",
+      "codepoint": "U+02DB",
+      "character": "˛"
+    },
+    {
+      "name": "tilde",
+      "codepoint": "U+02DC",
+      "character": "˜"
+    },
+    {
+      "name": "hungarumlaut",
+      "codepoint": "U+02DD",
+      "character": "˝"
+    },
+    {
+      "name": "gravecomb",
+      "codepoint": "U+0300",
+      "character": "̀"
+    },
+    {
+      "name": "acutecomb",
+      "codepoint": "U+0301",
+      "character": "́"
+    },
+    {
+      "name": "circumflexcomb",
+      "codepoint": "U+0302",
+      "character": "̂"
+    },
+    {
+      "name": "tildecomb",
+      "codepoint": "U+0303",
+      "character": "̃"
+    },
+    {
+      "name": "macroncomb",
+      "codepoint": "U+0304",
+      "character": "̄"
+    },
+    {
+      "name": "brevecomb",
+      "codepoint": "U+0306",
+      "character": "̆"
+    },
+    {
+      "name": "dotaccentcomb",
+      "codepoint": "U+0307",
+      "character": "̇"
+    },
+    {
+      "name": "dieresiscomb",
+      "codepoint": "U+0308",
+      "character": "̈"
+    },
+    {
+      "name": "ringcomb",
+      "codepoint": "U+030A",
+      "character": "̊"
+    },
+    {
+      "name": "hungarumlautcomb",
+      "codepoint": "U+030B",
+      "character": "̋"
+    },
+    {
+      "name": "caroncomb",
+      "codepoint": "U+030C",
+      "character": "̌"
+    },
+    {
+      "name": "commaaccentcomb",
+      "codepoint": "U+0326",
+      "character": "̦"
+    },
+    {
+      "name": "cedillacomb",
+      "codepoint": "U+0327",
+      "character": "̧"
+    },
+    {
+      "name": "ogonekcomb",
+      "codepoint": "U+0328",
+      "character": "̨"
+    },
+    {
+      "name": "Atilde",
+      "codepoint": "U+00C3",
+      "character": "Ã"
+    },
+    {
+      "name": "Aring",
+      "codepoint": "U+00C5",
+      "character": "Å"
+    },
+    {
+      "name": "Igrave",
+      "codepoint": "U+00CC",
+      "character": "Ì"
+    },
+    {
+      "name": "Eth",
+      "codepoint": "U+00D0",
+      "character": "Ð"
+    },
+    {
+      "name": "Ograve",
+      "codepoint": "U+00D2",
+      "character": "Ò"
+    },
+    {
+      "name": "Otilde",
+      "codepoint": "U+00D5",
+      "character": "Õ"
+    },
+    {
+      "name": "Oslash",
+      "codepoint": "U+00D8",
+      "character": "Ø"
+    },
+    {
+      "name": "Yacute",
+      "codepoint": "U+00DD",
+      "character": "Ý"
+    },
+    {
+      "name": "Thorn",
+      "codepoint": "U+00DE",
+      "character": "Þ"
+    },
+    {
+      "name": "atilde",
+      "codepoint": "U+00E3",
+      "character": "ã"
+    },
+    {
+      "name": "aring",
+      "codepoint": "U+00E5",
+      "character": "å"
+    },
+    {
+      "name": "igrave",
+      "codepoint": "U+00EC",
+      "character": "ì"
+    },
+    {
+      "name": "eth",
+      "codepoint": "U+00F0",
+      "character": "ð"
+    },
+    {
+      "name": "ograve",
+      "codepoint": "U+00F2",
+      "character": "ò"
+    },
+    {
+      "name": "otilde",
+      "codepoint": "U+00F5",
+      "character": "õ"
+    },
+    {
+      "name": "oslash",
+      "codepoint": "U+00F8",
+      "character": "ø"
+    },
+    {
+      "name": "yacute",
+      "codepoint": "U+00FD",
+      "character": "ý"
+    },
+    {
+      "name": "thorn",
+      "codepoint": "U+00FE",
+      "character": "þ"
+    },
+    {
+      "name": "Amacron",
+      "codepoint": "U+0100",
+      "character": "Ā"
+    },
+    {
+      "name": "amacron",
+      "codepoint": "U+0101",
+      "character": "ā"
+    },
+    {
+      "name": "Abreve",
+      "codepoint": "U+0102",
+      "character": "Ă"
+    },
+    {
+      "name": "abreve",
+      "codepoint": "U+0103",
+      "character": "ă"
+    },
+    {
+      "name": "Aogonek",
+      "codepoint": "U+0104",
+      "character": "Ą"
+    },
+    {
+      "name": "aogonek",
+      "codepoint": "U+0105",
+      "character": "ą"
+    },
+    {
+      "name": "Cacute",
+      "codepoint": "U+0106",
+      "character": "Ć"
+    },
+    {
+      "name": "cacute",
+      "codepoint": "U+0107",
+      "character": "ć"
+    },
+    {
+      "name": "Cdotaccent",
+      "codepoint": "U+010A",
+      "character": "Ċ"
+    },
+    {
+      "name": "cdotaccent",
+      "codepoint": "U+010B",
+      "character": "ċ"
+    },
+    {
+      "name": "Ccaron",
+      "codepoint": "U+010C",
+      "character": "Č"
+    },
+    {
+      "name": "ccaron",
+      "codepoint": "U+010D",
+      "character": "č"
+    },
+    {
+      "name": "Dcaron",
+      "codepoint": "U+010E",
+      "character": "Ď"
+    },
+    {
+      "name": "dcaron",
+      "codepoint": "U+010F",
+      "character": "ď"
+    },
+    {
+      "name": "Dcroat",
+      "codepoint": "U+0110",
+      "character": "Đ"
+    },
+    {
+      "name": "dcroat",
+      "codepoint": "U+0111",
+      "character": "đ"
+    },
+    {
+      "name": "Emacron",
+      "codepoint": "U+0112",
+      "character": "Ē"
+    },
+    {
+      "name": "emacron",
+      "codepoint": "U+0113",
+      "character": "ē"
+    },
+    {
+      "name": "Edotaccent",
+      "codepoint": "U+0116",
+      "character": "Ė"
+    },
+    {
+      "name": "edotaccent",
+      "codepoint": "U+0117",
+      "character": "ė"
+    },
+    {
+      "name": "Eogonek",
+      "codepoint": "U+0118",
+      "character": "Ę"
+    },
+    {
+      "name": "eogonek",
+      "codepoint": "U+0119",
+      "character": "ę"
+    },
+    {
+      "name": "Ecaron",
+      "codepoint": "U+011A",
+      "character": "Ě"
+    },
+    {
+      "name": "ecaron",
+      "codepoint": "U+011B",
+      "character": "ě"
+    },
+    {
+      "name": "Gbreve",
+      "codepoint": "U+011E",
+      "character": "Ğ"
+    },
+    {
+      "name": "gbreve",
+      "codepoint": "U+011F",
+      "character": "ğ"
+    },
+    {
+      "name": "Gdotaccent",
+      "codepoint": "U+0120",
+      "character": "Ġ"
+    },
+    {
+      "name": "gdotaccent",
+      "codepoint": "U+0121",
+      "character": "ġ"
+    },
+    {
+      "name": "Gcommaaccent",
+      "codepoint": "U+0122",
+      "character": "Ģ"
+    },
+    {
+      "name": "gcommaaccent",
+      "codepoint": "U+0123",
+      "character": "ģ"
+    },
+    {
+      "name": "Hbar",
+      "codepoint": "U+0126",
+      "character": "Ħ"
+    },
+    {
+      "name": "hbar",
+      "codepoint": "U+0127",
+      "character": "ħ"
+    },
+    {
+      "name": "Imacron",
+      "codepoint": "U+012A",
+      "character": "Ī"
+    },
+    {
+      "name": "imacron",
+      "codepoint": "U+012B",
+      "character": "ī"
+    },
+    {
+      "name": "Iogonek",
+      "codepoint": "U+012E",
+      "character": "Į"
+    },
+    {
+      "name": "iogonek",
+      "codepoint": "U+012F",
+      "character": "į"
+    },
+    {
+      "name": "Idotaccent",
+      "codepoint": "U+0130",
+      "character": "İ"
+    },
+    {
+      "name": "idotless",
+      "codepoint": "U+0131",
+      "character": "ı"
+    },
+    {
+      "name": "Kcommaaccent",
+      "codepoint": "U+0136",
+      "character": "Ķ"
+    },
+    {
+      "name": "kcommaaccent",
+      "codepoint": "U+0137",
+      "character": "ķ"
+    },
+    {
+      "name": "Lacute",
+      "codepoint": "U+0139",
+      "character": "Ĺ"
+    },
+    {
+      "name": "lacute",
+      "codepoint": "U+013A",
+      "character": "ĺ"
+    },
+    {
+      "name": "Lcommaaccent",
+      "codepoint": "U+013B",
+      "character": "Ļ"
+    },
+    {
+      "name": "lcommaaccent",
+      "codepoint": "U+013C",
+      "character": "ļ"
+    },
+    {
+      "name": "Lcaron",
+      "codepoint": "U+013D",
+      "character": "Ľ"
+    },
+    {
+      "name": "lcaron",
+      "codepoint": "U+013E",
+      "character": "ľ"
+    },
+    {
+      "name": "Lslash",
+      "codepoint": "U+0141",
+      "character": "Ł"
+    },
+    {
+      "name": "lslash",
+      "codepoint": "U+0142",
+      "character": "ł"
+    },
+    {
+      "name": "Nacute",
+      "codepoint": "U+0143",
+      "character": "Ń"
+    },
+    {
+      "name": "nacute",
+      "codepoint": "U+0144",
+      "character": "ń"
+    },
+    {
+      "name": "Ncommaaccent",
+      "codepoint": "U+0145",
+      "character": "Ņ"
+    },
+    {
+      "name": "ncommaaccent",
+      "codepoint": "U+0146",
+      "character": "ņ"
+    },
+    {
+      "name": "Ncaron",
+      "codepoint": "U+0147",
+      "character": "Ň"
+    },
+    {
+      "name": "ncaron",
+      "codepoint": "U+0148",
+      "character": "ň"
+    },
+    {
+      "name": "Ohungarumlaut",
+      "codepoint": "U+0150",
+      "character": "Ő"
+    },
+    {
+      "name": "ohungarumlaut",
+      "codepoint": "U+0151",
+      "character": "ő"
+    },
+    {
+      "name": "Racute",
+      "codepoint": "U+0154",
+      "character": "Ŕ"
+    },
+    {
+      "name": "racute",
+      "codepoint": "U+0155",
+      "character": "ŕ"
+    },
+    {
+      "name": "Rcaron",
+      "codepoint": "U+0158",
+      "character": "Ř"
+    },
+    {
+      "name": "rcaron",
+      "codepoint": "U+0159",
+      "character": "ř"
+    },
+    {
+      "name": "Sacute",
+      "codepoint": "U+015A",
+      "character": "Ś"
+    },
+    {
+      "name": "sacute",
+      "codepoint": "U+015B",
+      "character": "ś"
+    },
+    {
+      "name": "Scedilla",
+      "codepoint": "U+015E",
+      "character": "Ş"
+    },
+    {
+      "name": "scedilla",
+      "codepoint": "U+015F",
+      "character": "ş"
+    },
+    {
+      "name": "Scaron",
+      "codepoint": "U+0160",
+      "character": "Š"
+    },
+    {
+      "name": "scaron",
+      "codepoint": "U+0161",
+      "character": "š"
+    },
+    {
+      "name": "Tcaron",
+      "codepoint": "U+0164",
+      "character": "Ť"
+    },
+    {
+      "name": "tcaron",
+      "codepoint": "U+0165",
+      "character": "ť"
+    },
+    {
+      "name": "Umacron",
+      "codepoint": "U+016A",
+      "character": "Ū"
+    },
+    {
+      "name": "umacron",
+      "codepoint": "U+016B",
+      "character": "ū"
+    },
+    {
+      "name": "Uring",
+      "codepoint": "U+016E",
+      "character": "Ů"
+    },
+    {
+      "name": "uring",
+      "codepoint": "U+016F",
+      "character": "ů"
+    },
+    {
+      "name": "Uhungarumlaut",
+      "codepoint": "U+0170",
+      "character": "Ű"
+    },
+    {
+      "name": "uhungarumlaut",
+      "codepoint": "U+0171",
+      "character": "ű"
+    },
+    {
+      "name": "Uogonek",
+      "codepoint": "U+0172",
+      "character": "Ų"
+    },
+    {
+      "name": "uogonek",
+      "codepoint": "U+0173",
+      "character": "ų"
+    },
+    {
+      "name": "Wcircumflex",
+      "codepoint": "U+0174",
+      "character": "Ŵ"
+    },
+    {
+      "name": "wcircumflex",
+      "codepoint": "U+0175",
+      "character": "ŵ"
+    },
+    {
+      "name": "Ycircumflex",
+      "codepoint": "U+0176",
+      "character": "Ŷ"
+    },
+    {
+      "name": "ycircumflex",
+      "codepoint": "U+0177",
+      "character": "ŷ"
+    },
+    {
+      "name": "Zacute",
+      "codepoint": "U+0179",
+      "character": "Ź"
+    },
+    {
+      "name": "zacute",
+      "codepoint": "U+017A",
+      "character": "ź"
+    },
+    {
+      "name": "Zdotaccent",
+      "codepoint": "U+017B",
+      "character": "Ż"
+    },
+    {
+      "name": "zdotaccent",
+      "codepoint": "U+017C",
+      "character": "ż"
+    },
+    {
+      "name": "Zcaron",
+      "codepoint": "U+017D",
+      "character": "Ž"
+    },
+    {
+      "name": "zcaron",
+      "codepoint": "U+017E",
+      "character": "ž"
+    },
+    {
+      "name": "Scommaaccent",
+      "codepoint": "U+0218",
+      "character": "Ș"
+    },
+    {
+      "name": "scommaaccent",
+      "codepoint": "U+0219",
+      "character": "ș"
+    },
+    {
+      "name": "Tcommaaccent",
+      "codepoint": "U+021A",
+      "character": "Ț"
+    },
+    {
+      "name": "tcommaaccent",
+      "codepoint": "U+021B",
+      "character": "ț"
+    },
+    {
+      "name": "jdotless",
+      "codepoint": "U+0237",
+      "character": "ȷ"
+    },
+    {
+      "name": "Wgrave",
+      "codepoint": "U+1E80",
+      "character": "Ẁ"
+    },
+    {
+      "name": "wgrave",
+      "codepoint": "U+1E81",
+      "character": "ẁ"
+    },
+    {
+      "name": "Wacute",
+      "codepoint": "U+1E82",
+      "character": "Ẃ"
+    },
+    {
+      "name": "wacute",
+      "codepoint": "U+1E83",
+      "character": "ẃ"
+    },
+    {
+      "name": "Wdieresis",
+      "codepoint": "U+1E84",
+      "character": "Ẅ"
+    },
+    {
+      "name": "wdieresis",
+      "codepoint": "U+1E85",
+      "character": "ẅ"
+    },
+    {
+      "name": "Ygrave",
+      "codepoint": "U+1EF2",
+      "character": "Ỳ"
+    },
+    {
+      "name": "ygrave",
+      "codepoint": "U+1EF3",
+      "character": "ỳ"
+    }
+  ],
+  "missing_unencoded_glyphs": [
+    "periodcentered.loclCAT",
+    "periodcentered.loclCAT.case",
+    "caroncomb.alt",
+    "idotaccent"
+  ],
+  "unresolved": []
+}
