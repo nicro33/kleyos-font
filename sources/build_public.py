@@ -1,83 +1,158 @@
-"""Build public Kleyos 1.2.0 metadata from the validated i31 font binaries.
-
-The original editable drawing sources are not reconstructed by this script.
-"""
-from pathlib import Path
-from fontTools.ttLib import TTFont
+#!/usr/bin/env python3
+"""Build Kleyos Regular from the editable i33 master."""
+import argparse
 import hashlib
 import json
+import os
+from pathlib import Path
+
+from fontTools.ttLib import TTFont, newTable
+from fontTools.ttLib.tables._k_e_r_n import KernTable_format_0
+from fontTools.ttLib.tables.ttProgram import Program
+from ufo2ft import compileTTF
+from ufo2ft.filters import DecomposeComponentsFilter
+from ufoLib2 import Font
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '1.2.0'
-EXPECTED = {
-    'Display': '6b6b5ffa2a7b5b5f22ae86189be35bbf091fc5ba3e65662a1951f74e60cd016d',
-    'Text': '6cc2aacb5555222b59297da16360df3e225fe879a7fb5bada46c8920044d8478',
-}
+MASTER = ROOT / "sources/KleyosMaster.ufoz"
+VERSION = "1.3.0"
+OPENTYPE_VERSION = "1.411"
+STEM = "Kleyos-Regular"
 
-def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
 
-def build():
-    records = []
-    for role, expected in EXPECTED.items():
-        source = ROOT / f'sources/validated-i31/Kleyos-{role}-i31-Assemblages.ttf'
-        assert sha(source) == expected, f'Source identity changed: {role}'
-        font = TTFont(source, recalcTimestamp=False)
-        names = {
-            1: f'Kleyos {role}', 2: 'Regular',
-            3: f'Kleyos{role}-Regular;1.310;KLYS',
-            4: f'Kleyos {role} Regular', 5: 'Version 1.310',
-            6: f'Kleyos{role}-Regular', 16: f'Kleyos {role}', 17: 'Regular',
-            13: 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org',
-        }
-        for record in list(font['name'].names):
-            if record.nameID in names:
-                font['name'].setName(names[record.nameID], record.nameID,
-                    record.platformID, record.platEncID, record.langID)
-        ttf = ROOT / f'fonts/ttf/Kleyos-{role}.ttf'
-        woff = ROOT / f'fonts/woff2/Kleyos-{role}.woff2'
-        ttf.parent.mkdir(parents=True, exist_ok=True)
-        woff.parent.mkdir(parents=True, exist_ok=True)
-        font.save(ttf)
-        font.flavor = 'woff2'
-        font.save(woff)
-        baseline = TTFont(source, recalcTimestamp=False)
-        public = TTFont(ttf, recalcTimestamp=False)
-        web = TTFont(woff, recalcTimestamp=False)
-        checked = []
-        for table in baseline.keys():
-            if table not in ('GlyphOrder', 'head', 'name'):
-                assert baseline.getTableData(table) == public.getTableData(table), table
-                assert public.getTableData(table) == web.getTableData(table), table
-                checked.append(table)
-        assert public['OS/2'].fsType == 0
-        assert public.getBestCmap() == baseline.getBestCmap()
-        assert web['name'].getDebugName(1) == f'Kleyos {role}'
-        records.append({
-            'role': role, 'source': source.relative_to(ROOT).as_posix(),
-            'source_sha256': expected, 'family': f'Kleyos {role}',
-            'public_semver': VERSION, 'opentype_version': '1.310',
-            'identical_source_tables_except_head_and_name': checked,
-            'woff2_roundtrip_tables_match': True,
-            'codepoints': len(public.getBestCmap()),
-            'ttf': {'path': ttf.relative_to(ROOT).as_posix(), 'sha256': sha(ttf), 'size_bytes': ttf.stat().st_size},
-            'woff2': {'path': woff.relative_to(ROOT).as_posix(), 'sha256': sha(woff), 'size_bytes': woff.stat().st_size},
-        })
-    manifest = {
-        'name': 'Kleyos', 'version': VERSION, 'date': '2026-10-28',
-        'source_iteration': 'H2-i31-Assemblages', 'license': 'OFL-1.1',
-        'reserved_font_name': 'Kleyos',
-        'repository': 'https://github.com/nicro33/kleyos-font',
-        'tag': 'v' + VERSION,
-        'tag_status': 'not_created_on_remote',
-        'immutable_web_ref': 'b4412dec8b36b763e583524f922d0ebc2b91d3d6',
-        'publication_date': '2026-10-29',
-        'source_drawings_and_positioning_unchanged': True,
-        'fontbakery_googlefonts_acceptance': False,
-        'fonts': records,
+def file_record(path, relative_to):
+    return {
+        "path": path.relative_to(relative_to).as_posix(),
+        "sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "size_bytes": path.stat().st_size,
     }
-    (ROOT / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n')
-    print(json.dumps({'public_version': VERSION, 'internal_version': '1.310', 'font_variants': len(records), 'all_content_tables_preserved': True}))
 
-if __name__ == '__main__':
-    build()
+
+def build(out):
+    os.environ.setdefault("SOURCE_DATE_EPOCH", "1793232000")
+    ufo = Font.open(MASTER, lazy=False)
+    ufo.info.familyName = "Kleyos"
+    ufo.info.styleName = "Regular"
+    ufo.info.versionMajor, ufo.info.versionMinor = (1, 411)
+    ufo.info.copyright = (ROOT / "OFL.txt").read_text(encoding="utf-8").splitlines()[0]
+    for name, width in (("space", 250), ("nbspace", 250), ("uni202F", 125)):
+        ufo[name].width = width
+
+    font = compileTTF(
+        ufo,
+        convertCubics=False,
+        reverseDirection=False,
+        removeOverlaps=False,
+        useProductionNames=False,
+        inplace=False,
+        filters=[DecomposeComponentsFilter()],
+    )
+
+    # Keep the i33 legacy kerning for encoded glyphs alongside full GPOS.
+    cmap = font.getBestCmap()
+    encoded = set(cmap.values())
+    pairs = sorted(
+        (pair, value) for pair, value in ufo.kerning.items()
+        if pair[0] in encoded and pair[1] in encoded
+    )
+    kern = newTable("kern")
+    kern.version = 0
+    kern.kernTables = []
+    # Each format-0 subtable has a 16-bit length field.
+    for start in range(0, len(pairs), 10_000):
+        table = KernTable_format_0()
+        table.version = 0
+        table.coverage = 1
+        table.kernTable = dict(pairs[start:start + 10_000])
+        kern.kernTables.append(table)
+    font["kern"] = kern
+
+    # Preserve the i33 scan conversion settings for the unhinted outlines.
+    font["gasp"] = newTable("gasp")
+    font["gasp"].version = 1
+    font["gasp"].gaspRange = {65535: 15}
+    font["prep"] = newTable("prep")
+    font["prep"].program = Program()
+    font["prep"].program.fromAssembly(
+        ["PUSHW[ ]", "511", "SCANCTRL[ ]", "PUSHB[ ]", "4", "SCANTYPE[ ]"]
+    )
+    font["maxp"].maxStackElements = max(1, font["maxp"].maxStackElements)
+    font.recalcTimestamp = False
+    font["head"].created = font["head"].modified = 3876076800
+
+    names = font["name"]
+    names.names = [record for record in names.names if record.nameID not in (16, 17)]
+    public_names = {
+        1: "Kleyos",
+        2: "Regular",
+        3: f"{OPENTYPE_VERSION};KLYS;{STEM}",
+        4: "Kleyos Regular",
+        5: f"Version {OPENTYPE_VERSION}",
+        6: STEM,
+    }
+    for name_id, value in public_names.items():
+        for record in names.names:
+            if record.nameID == name_id:
+                record.string = value
+        names.setName(value, name_id, 3, 1, 0x409)
+
+    ttf = out / "fonts" / "ttf" / f"{STEM}.ttf"
+    woff2 = out / "fonts" / "woff2" / f"{STEM}.woff2"
+    ttf.parent.mkdir(parents=True, exist_ok=True)
+    woff2.parent.mkdir(parents=True, exist_ok=True)
+    font.save(ttf)
+    font.flavor = "woff2"
+    font.save(woff2)
+
+    with TTFont(ttf) as desktop, TTFont(woff2) as web:
+        assert desktop.keys() == web.keys()
+        for tag in desktop.keys():
+            if tag not in ("GlyphOrder", "head"):
+                assert desktop.getTableData(tag) == web.getTableData(tag), tag
+        assert desktop["OS/2"].fsType == 0
+        glyph_count = len(desktop.getGlyphOrder())
+
+    required = json.loads((ROOT / "sources/gf-latin-core-map.json").read_text())
+    glyph_order = set(font.getGlyphOrder())
+    missing = [
+        entry["name"] for entry in required["glyphs"]
+        if (entry["name"] not in glyph_order if entry["unicode"] is None else entry["unicode"] not in cmap)
+    ]
+    if missing:
+        raise ValueError(f"Missing Google Fonts Latin Core glyphs: {missing}")
+
+    manifest = {
+        "name": "Kleyos",
+        "version": VERSION,
+        "source_iteration": "i33",
+        "source": file_record(MASTER, ROOT),
+        "source_archive_sha256": "fdb9b8394a5c5b4b878606592b78b5d791f73eef13b9b172d1f5a72b7cda9fa7",
+        "source_commit": "9066724660e004dc87ba0a10972fd59eaa2ad3eb",
+        "license": "OFL-1.1",
+        "reserved_font_name": "Kleyos",
+        "repository": "https://github.com/nicro33/kleyos-font",
+        "tag": f"v{VERSION}",
+        "fonts": [{
+            "family": "Kleyos",
+            "style": "Regular",
+            "opentype_version": OPENTYPE_VERSION,
+            "codepoints": len(cmap),
+            "glyph_count": glyph_count,
+            "space_widths": {"U+0020": 250, "U+00A0": 250, "U+202F": 125},
+            "ttf": file_record(ttf, out),
+            "woff2": file_record(woff2, out),
+        }],
+        "latin_core": {
+            "reference_revision": required["revision"],
+            "entries_checked": len(required["glyphs"]),
+            "missing": [],
+        },
+    }
+    (out / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    print(f"Built {STEM} {VERSION} from {MASTER.name} ({len(cmap)} code points).")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--out", type=Path, default=ROOT / "build/public")
+    build(parser.parse_args().out.resolve())

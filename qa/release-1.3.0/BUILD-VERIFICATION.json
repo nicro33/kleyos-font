@@ -1,0 +1,31 @@
+{
+  "deterministic_double_build": true,
+  "reference": "KleyosDisplayDevi33-Regular.ttf",
+  "same_tables_between_reference_and_public": [
+    "hhea",
+    "maxp",
+    "OS/2",
+    "hmtx",
+    "cmap",
+    "prep",
+    "loca",
+    "glyf",
+    "kern",
+    "post",
+    "gasp",
+    "GDEF",
+    "GPOS",
+    "GSUB"
+  ],
+  "woff2_head_bit_11_changed": true,
+  "new_family": "Kleyos",
+  "style": "Regular",
+  "postscript": "Kleyos-Regular",
+  "woff2_same_names": true,
+  "ots": {
+    "ttf": "passed",
+    "woff2": "passed"
+  },
+  "ttf_sha256": "bfcb244510ed27f2a87dd26ec31e00fe7f39c14740184a894bc96bd18ff9d14d",
+  "woff2_sha256": "0e071243a41b9f5493494f6b9f3f74f6e8b6f2b629bea13955e36179ce110a0d"
+}

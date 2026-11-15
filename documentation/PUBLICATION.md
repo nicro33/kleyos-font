@@ -1,70 +1,25 @@
-# Publication de Kleyos
+# Publication de Kleyos 1.3.0
 
-Le dépôt existant publiait les familles **Kleyos Display** et **Kleyos Text**
-avec TTF, WOFF2, CSS, licence OFL et un ZIP dans `dist/`. Son README affichait
-1.1.0 (H2-i25b-balanced), alors que le dernier message de commit annonçait
-encore 1.0.0. Aucun tag ni objet GitHub Release n'était présent à la vérification
-du 28 octobre 2026. Cette procédure reprend la structure effectivement publiée
-et rend la version courante explicite.
+1. Installer les dépendances de build sur Python 3.12 et lancer
+   `python sources/build_public.py`. Comparer les sorties au manifeste
+   et aux deux polices publiques comme indiqué dans le README.
+2. Vérifier le profil Google Fonts avec FontBakery 1.1.0, la couverture
+   Latin Core, OTS et le chargement HTTP dans Chrome et Firefox.
+3. Lancer `python sources/package_public.py` pour construire le ZIP et son
+   empreinte. Décompresser une copie et lancer `sha256sum -c SHA256SUMS.txt`
+   à la racine de l’archive.
+4. Vérifier le SHA distant du commit et la disponibilité du tag `v1.3.0`.
+   Publier le tag sur ce commit et joindre le ZIP et son fichier `.sha256`
+   à la Release GitHub. Comparer les empreintes après téléchargement.
 
-1. Identifier et vérifier les fontes candidates, leurs empreintes et leurs QA.
-2. Produire les binaires publics avec les noms de familles stables. Préserver
-   les dessins, le crénage et les métriques de la candidate retenue.
-3. Actualiser README, CHANGELOG, FONTLOG, manifeste, CSS et sommes SHA-256.
-4. Vérifier la conversion WOFF2 et le chargement web ; conserver les limites
-   des contrôles. Les tests Google Fonts ne valent pas une admission au catalogue.
-5. Construire l'archive versionnée dans `dist/`, publier le commit et vérifier
-   sa référence immuable. Ajouter un tag sémantique et une page GitHub Release
-   lorsque ces opérations sont disponibles.
-6. Vérifier les fichiers sur GitHub et les URL web avec version explicite.
+## Catalogue Google Fonts
 
-## Version 1.2.0
+La candidature concerne **Kleyos**, en **Regular**. Elle s’appuie sur les
+sources éditables, le TTF, le build, le spécimen et les rapports liés à un
+commit immuable. Le nom réservé Kleyos est toujours déclaré dans l’OFL.
+Le périmètre d’une autorisation spéciale doit être discuté avec Google
+Fonts. La revue du catalogue et le CLA restent des démarches séparées.
 
-Base : **H2-i31 Assemblages**. Les métadonnées publiques gardent les familles
-Kleyos Display / Kleyos Text. Le numéro OpenType reste **1.310**, supérieur à
-celui de l'ancienne publication ; **1.2.0** est le numéro public de distribution.
-La différence est consignée dans `manifest.json`.
-
-Le script `sources/build_public.py` reconstruit les métadonnées publiques
-à partir des TTF i31 identifiés par SHA-256. Les entrées binaires sont dans
-`sources/validated-i31/`. Ce mécanisme n'est pas encore une chaîne Google Fonts
-fondée sur des sources de dessin éditables UFO/Glyphs.
-
-## Police web et catalogue
-
-Les WOFF2 peuvent être hébergées et chargées avec `@font-face`, sans inscription
-dans un catalogue. Une référence immuable de commit permet la distribution par jsDelivr :
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nicro33/kleyos-font@b4412dec8b36b763e583524f922d0ebc2b91d3d6/css/kleyos.css">
-```
-
-L'inscription à **Google Fonts** est une démarche distincte. Le dépôt et la
-licence ouverts sont des prérequis ; les points restant à traiter sont :
-
-- compléter **GF Latin Core** ; voir `qa/googlefonts/Latin-Core-Coverage.json` ;
-- examiner et corriger les échecs réels du profil FontBakery `googlefonts` ;
-- fournir les sources éditables et une construction reproductible en une commande ;
-- traiter le **Reserved Font Name Kleyos**, conservé dans cette publication.
-  Le guide d'admission demande une OFL sans RFN ; toute modification de ce choix
-  doit être décidée par Nicolas Gros, détenteur des droits ;
-- vérifier les métriques, les noms et les rendus sur les navigateurs et systèmes visés ;
-- remplir le CLA Google, puis ouvrir une demande d'ajout et attendre la revue.
-
-Références officielles vérifiées le 28 octobre 2026 :
-
-- https://googlefonts.github.io/gf-guide/onboarding.html
-- https://googlefonts.github.io/gf-guide/requirements.html
-- https://googlefonts.github.io/gf-guide/production.html
-- https://googlefonts.github.io/gf-guide/upstream.html
-- https://github.com/jsdelivr/jsdelivr#github
-
-Une demande Google Fonts et la signature du CLA ne font pas partie de cette
-publication GitHub ; aucun statut d'admission n'est revendiqué.
-
-## État de la diffusion du 29 octobre 2026
-
-La version 1.2.0 est publiée sur la branche principale. Les URL web utilisent
-le commit public immuable `b4412dec8b36b763e583524f922d0ebc2b91d3d6`, dont les fontes
-sont identiques aux binaires de cette distribution. Le tag sémantique `v1.2.0`
-n'a pas encore été créé sur GitHub ; il ne conditionne pas ces URL par commit.
+- [Guide de soumission](https://googlefonts.github.io/gf-guide/onboarding.html)
+- [Formulaire Add Font](https://github.com/google/fonts/issues/new?template=1_add-font.md)
+- [Version 1.2.0, Display et Text](https://github.com/nicro33/kleyos-font/tree/b4412dec8b36b763e583524f922d0ebc2b91d3d6)

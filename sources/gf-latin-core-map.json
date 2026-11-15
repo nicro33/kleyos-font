@@ -1,0 +1,1625 @@
+{
+  "revision": "0ac0e515473e39247683ed473fd74728671e2364",
+  "glyphs": [
+    {
+      "name": "dollar",
+      "unicode": 36,
+      "production_name": "dollar"
+    },
+    {
+      "name": "percent",
+      "unicode": 37,
+      "production_name": "percent"
+    },
+    {
+      "name": "ampersand",
+      "unicode": 38,
+      "production_name": "ampersand"
+    },
+    {
+      "name": "plus",
+      "unicode": 43,
+      "production_name": "plus"
+    },
+    {
+      "name": "less",
+      "unicode": 60,
+      "production_name": "less"
+    },
+    {
+      "name": "equal",
+      "unicode": 61,
+      "production_name": "equal"
+    },
+    {
+      "name": "greater",
+      "unicode": 62,
+      "production_name": "greater"
+    },
+    {
+      "name": "at",
+      "unicode": 64,
+      "production_name": "at"
+    },
+    {
+      "name": "asciicircum",
+      "unicode": 94,
+      "production_name": "asciicircum"
+    },
+    {
+      "name": "bar",
+      "unicode": 124,
+      "production_name": "bar"
+    },
+    {
+      "name": "asciitilde",
+      "unicode": 126,
+      "production_name": "asciitilde"
+    },
+    {
+      "name": "cent",
+      "unicode": 162,
+      "production_name": "cent"
+    },
+    {
+      "name": "sterling",
+      "unicode": 163,
+      "production_name": "sterling"
+    },
+    {
+      "name": "yen",
+      "unicode": 165,
+      "production_name": "yen"
+    },
+    {
+      "name": "section",
+      "unicode": 167,
+      "production_name": "section"
+    },
+    {
+      "name": "copyright",
+      "unicode": 169,
+      "production_name": "copyright"
+    },
+    {
+      "name": "registered",
+      "unicode": 174,
+      "production_name": "registered"
+    },
+    {
+      "name": "degree",
+      "unicode": 176,
+      "production_name": "degree"
+    },
+    {
+      "name": "paragraph",
+      "unicode": 182,
+      "production_name": "paragraph"
+    },
+    {
+      "name": "multiply",
+      "unicode": 215,
+      "production_name": "multiply"
+    },
+    {
+      "name": "divide",
+      "unicode": 247,
+      "production_name": "divide"
+    },
+    {
+      "name": "euro",
+      "unicode": 8364,
+      "production_name": "Euro"
+    },
+    {
+      "name": "trademark",
+      "unicode": 8482,
+      "production_name": "trademark"
+    },
+    {
+      "name": "minus",
+      "unicode": 8722,
+      "production_name": "minus"
+    },
+    {
+      "name": "space",
+      "unicode": 32,
+      "production_name": "space"
+    },
+    {
+      "name": "nbspace",
+      "unicode": 160,
+      "production_name": "uni00A0"
+    },
+    {
+      "name": ".notdef",
+      "unicode": null,
+      "production_name": ".notdef"
+    },
+    {
+      "name": "periodcentered.loclCAT",
+      "unicode": null,
+      "production_name": "periodcentered.loclCAT"
+    },
+    {
+      "name": "periodcentered.loclCAT.case",
+      "unicode": null,
+      "production_name": "periodcentered.loclCAT.case"
+    },
+    {
+      "name": "exclam",
+      "unicode": 33,
+      "production_name": "exclam"
+    },
+    {
+      "name": "quotedbl",
+      "unicode": 34,
+      "production_name": "quotedbl"
+    },
+    {
+      "name": "numbersign",
+      "unicode": 35,
+      "production_name": "numbersign"
+    },
+    {
+      "name": "quotesingle",
+      "unicode": 39,
+      "production_name": "quotesingle"
+    },
+    {
+      "name": "parenleft",
+      "unicode": 40,
+      "production_name": "parenleft"
+    },
+    {
+      "name": "parenright",
+      "unicode": 41,
+      "production_name": "parenright"
+    },
+    {
+      "name": "asterisk",
+      "unicode": 42,
+      "production_name": "asterisk"
+    },
+    {
+      "name": "comma",
+      "unicode": 44,
+      "production_name": "comma"
+    },
+    {
+      "name": "hyphen",
+      "unicode": 45,
+      "production_name": "hyphen"
+    },
+    {
+      "name": "period",
+      "unicode": 46,
+      "production_name": "period"
+    },
+    {
+      "name": "slash",
+      "unicode": 47,
+      "production_name": "slash"
+    },
+    {
+      "name": "colon",
+      "unicode": 58,
+      "production_name": "colon"
+    },
+    {
+      "name": "semicolon",
+      "unicode": 59,
+      "production_name": "semicolon"
+    },
+    {
+      "name": "question",
+      "unicode": 63,
+      "production_name": "question"
+    },
+    {
+      "name": "bracketleft",
+      "unicode": 91,
+      "production_name": "bracketleft"
+    },
+    {
+      "name": "backslash",
+      "unicode": 92,
+      "production_name": "backslash"
+    },
+    {
+      "name": "bracketright",
+      "unicode": 93,
+      "production_name": "bracketright"
+    },
+    {
+      "name": "underscore",
+      "unicode": 95,
+      "production_name": "underscore"
+    },
+    {
+      "name": "braceleft",
+      "unicode": 123,
+      "production_name": "braceleft"
+    },
+    {
+      "name": "braceright",
+      "unicode": 125,
+      "production_name": "braceright"
+    },
+    {
+      "name": "exclamdown",
+      "unicode": 161,
+      "production_name": "exclamdown"
+    },
+    {
+      "name": "guillemetleft",
+      "unicode": 171,
+      "production_name": "guillemotleft"
+    },
+    {
+      "name": "periodcentered",
+      "unicode": 183,
+      "production_name": "periodcentered"
+    },
+    {
+      "name": "guillemetright",
+      "unicode": 187,
+      "production_name": "guillemotright"
+    },
+    {
+      "name": "questiondown",
+      "unicode": 191,
+      "production_name": "questiondown"
+    },
+    {
+      "name": "endash",
+      "unicode": 8211,
+      "production_name": "endash"
+    },
+    {
+      "name": "emdash",
+      "unicode": 8212,
+      "production_name": "emdash"
+    },
+    {
+      "name": "quoteleft",
+      "unicode": 8216,
+      "production_name": "quoteleft"
+    },
+    {
+      "name": "quoteright",
+      "unicode": 8217,
+      "production_name": "quoteright"
+    },
+    {
+      "name": "quotesinglbase",
+      "unicode": 8218,
+      "production_name": "quotesinglbase"
+    },
+    {
+      "name": "quotedblleft",
+      "unicode": 8220,
+      "production_name": "quotedblleft"
+    },
+    {
+      "name": "quotedblright",
+      "unicode": 8221,
+      "production_name": "quotedblright"
+    },
+    {
+      "name": "quotedblbase",
+      "unicode": 8222,
+      "production_name": "quotedblbase"
+    },
+    {
+      "name": "bullet",
+      "unicode": 8226,
+      "production_name": "bullet"
+    },
+    {
+      "name": "ellipsis",
+      "unicode": 8230,
+      "production_name": "ellipsis"
+    },
+    {
+      "name": "guilsinglleft",
+      "unicode": 8249,
+      "production_name": "guilsinglleft"
+    },
+    {
+      "name": "guilsinglright",
+      "unicode": 8250,
+      "production_name": "guilsinglright"
+    },
+    {
+      "name": "zero",
+      "unicode": 48,
+      "production_name": "zero"
+    },
+    {
+      "name": "one",
+      "unicode": 49,
+      "production_name": "one"
+    },
+    {
+      "name": "two",
+      "unicode": 50,
+      "production_name": "two"
+    },
+    {
+      "name": "three",
+      "unicode": 51,
+      "production_name": "three"
+    },
+    {
+      "name": "four",
+      "unicode": 52,
+      "production_name": "four"
+    },
+    {
+      "name": "five",
+      "unicode": 53,
+      "production_name": "five"
+    },
+    {
+      "name": "six",
+      "unicode": 54,
+      "production_name": "six"
+    },
+    {
+      "name": "seven",
+      "unicode": 55,
+      "production_name": "seven"
+    },
+    {
+      "name": "eight",
+      "unicode": 56,
+      "production_name": "eight"
+    },
+    {
+      "name": "nine",
+      "unicode": 57,
+      "production_name": "nine"
+    },
+    {
+      "name": "grave",
+      "unicode": 96,
+      "production_name": "grave"
+    },
+    {
+      "name": "dieresis",
+      "unicode": 168,
+      "production_name": "dieresis"
+    },
+    {
+      "name": "macron",
+      "unicode": 175,
+      "production_name": "macron"
+    },
+    {
+      "name": "acute",
+      "unicode": 180,
+      "production_name": "acute"
+    },
+    {
+      "name": "cedilla",
+      "unicode": 184,
+      "production_name": "cedilla"
+    },
+    {
+      "name": "circumflex",
+      "unicode": 710,
+      "production_name": "circumflex"
+    },
+    {
+      "name": "caron",
+      "unicode": 711,
+      "production_name": "caron"
+    },
+    {
+      "name": "breve",
+      "unicode": 728,
+      "production_name": "breve"
+    },
+    {
+      "name": "dotaccent",
+      "unicode": 729,
+      "production_name": "dotaccent"
+    },
+    {
+      "name": "ring",
+      "unicode": 730,
+      "production_name": "ring"
+    },
+    {
+      "name": "ogonek",
+      "unicode": 731,
+      "production_name": "ogonek"
+    },
+    {
+      "name": "tilde",
+      "unicode": 732,
+      "production_name": "tilde"
+    },
+    {
+      "name": "hungarumlaut",
+      "unicode": 733,
+      "production_name": "hungarumlaut"
+    },
+    {
+      "name": "gravecomb",
+      "unicode": 768,
+      "production_name": "gravecomb"
+    },
+    {
+      "name": "acutecomb",
+      "unicode": 769,
+      "production_name": "acutecomb"
+    },
+    {
+      "name": "circumflexcomb",
+      "unicode": 770,
+      "production_name": "uni0302"
+    },
+    {
+      "name": "tildecomb",
+      "unicode": 771,
+      "production_name": "tildecomb"
+    },
+    {
+      "name": "macroncomb",
+      "unicode": 772,
+      "production_name": "uni0304"
+    },
+    {
+      "name": "brevecomb",
+      "unicode": 774,
+      "production_name": "uni0306"
+    },
+    {
+      "name": "dotaccentcomb",
+      "unicode": 775,
+      "production_name": "uni0307"
+    },
+    {
+      "name": "dieresiscomb",
+      "unicode": 776,
+      "production_name": "uni0308"
+    },
+    {
+      "name": "ringcomb",
+      "unicode": 778,
+      "production_name": "uni030A"
+    },
+    {
+      "name": "hungarumlautcomb",
+      "unicode": 779,
+      "production_name": "uni030B"
+    },
+    {
+      "name": "caroncomb",
+      "unicode": 780,
+      "production_name": "uni030C"
+    },
+    {
+      "name": "commaaccentcomb",
+      "unicode": 806,
+      "production_name": "uni0326"
+    },
+    {
+      "name": "cedillacomb",
+      "unicode": 807,
+      "production_name": "uni0327"
+    },
+    {
+      "name": "ogonekcomb",
+      "unicode": 808,
+      "production_name": "uni0328"
+    },
+    {
+      "name": "caroncomb.alt",
+      "unicode": null,
+      "production_name": "uni030C.alt"
+    },
+    {
+      "name": "A",
+      "unicode": 65,
+      "production_name": "A"
+    },
+    {
+      "name": "B",
+      "unicode": 66,
+      "production_name": "B"
+    },
+    {
+      "name": "C",
+      "unicode": 67,
+      "production_name": "C"
+    },
+    {
+      "name": "D",
+      "unicode": 68,
+      "production_name": "D"
+    },
+    {
+      "name": "E",
+      "unicode": 69,
+      "production_name": "E"
+    },
+    {
+      "name": "F",
+      "unicode": 70,
+      "production_name": "F"
+    },
+    {
+      "name": "G",
+      "unicode": 71,
+      "production_name": "G"
+    },
+    {
+      "name": "H",
+      "unicode": 72,
+      "production_name": "H"
+    },
+    {
+      "name": "I",
+      "unicode": 73,
+      "production_name": "I"
+    },
+    {
+      "name": "J",
+      "unicode": 74,
+      "production_name": "J"
+    },
+    {
+      "name": "K",
+      "unicode": 75,
+      "production_name": "K"
+    },
+    {
+      "name": "L",
+      "unicode": 76,
+      "production_name": "L"
+    },
+    {
+      "name": "M",
+      "unicode": 77,
+      "production_name": "M"
+    },
+    {
+      "name": "N",
+      "unicode": 78,
+      "production_name": "N"
+    },
+    {
+      "name": "O",
+      "unicode": 79,
+      "production_name": "O"
+    },
+    {
+      "name": "P",
+      "unicode": 80,
+      "production_name": "P"
+    },
+    {
+      "name": "Q",
+      "unicode": 81,
+      "production_name": "Q"
+    },
+    {
+      "name": "R",
+      "unicode": 82,
+      "production_name": "R"
+    },
+    {
+      "name": "S",
+      "unicode": 83,
+      "production_name": "S"
+    },
+    {
+      "name": "T",
+      "unicode": 84,
+      "production_name": "T"
+    },
+    {
+      "name": "U",
+      "unicode": 85,
+      "production_name": "U"
+    },
+    {
+      "name": "V",
+      "unicode": 86,
+      "production_name": "V"
+    },
+    {
+      "name": "W",
+      "unicode": 87,
+      "production_name": "W"
+    },
+    {
+      "name": "X",
+      "unicode": 88,
+      "production_name": "X"
+    },
+    {
+      "name": "Y",
+      "unicode": 89,
+      "production_name": "Y"
+    },
+    {
+      "name": "Z",
+      "unicode": 90,
+      "production_name": "Z"
+    },
+    {
+      "name": "a",
+      "unicode": 97,
+      "production_name": "a"
+    },
+    {
+      "name": "b",
+      "unicode": 98,
+      "production_name": "b"
+    },
+    {
+      "name": "c",
+      "unicode": 99,
+      "production_name": "c"
+    },
+    {
+      "name": "d",
+      "unicode": 100,
+      "production_name": "d"
+    },
+    {
+      "name": "e",
+      "unicode": 101,
+      "production_name": "e"
+    },
+    {
+      "name": "f",
+      "unicode": 102,
+      "production_name": "f"
+    },
+    {
+      "name": "g",
+      "unicode": 103,
+      "production_name": "g"
+    },
+    {
+      "name": "h",
+      "unicode": 104,
+      "production_name": "h"
+    },
+    {
+      "name": "i",
+      "unicode": 105,
+      "production_name": "i"
+    },
+    {
+      "name": "j",
+      "unicode": 106,
+      "production_name": "j"
+    },
+    {
+      "name": "k",
+      "unicode": 107,
+      "production_name": "k"
+    },
+    {
+      "name": "l",
+      "unicode": 108,
+      "production_name": "l"
+    },
+    {
+      "name": "m",
+      "unicode": 109,
+      "production_name": "m"
+    },
+    {
+      "name": "n",
+      "unicode": 110,
+      "production_name": "n"
+    },
+    {
+      "name": "o",
+      "unicode": 111,
+      "production_name": "o"
+    },
+    {
+      "name": "p",
+      "unicode": 112,
+      "production_name": "p"
+    },
+    {
+      "name": "q",
+      "unicode": 113,
+      "production_name": "q"
+    },
+    {
+      "name": "r",
+      "unicode": 114,
+      "production_name": "r"
+    },
+    {
+      "name": "s",
+      "unicode": 115,
+      "production_name": "s"
+    },
+    {
+      "name": "t",
+      "unicode": 116,
+      "production_name": "t"
+    },
+    {
+      "name": "u",
+      "unicode": 117,
+      "production_name": "u"
+    },
+    {
+      "name": "v",
+      "unicode": 118,
+      "production_name": "v"
+    },
+    {
+      "name": "w",
+      "unicode": 119,
+      "production_name": "w"
+    },
+    {
+      "name": "x",
+      "unicode": 120,
+      "production_name": "x"
+    },
+    {
+      "name": "y",
+      "unicode": 121,
+      "production_name": "y"
+    },
+    {
+      "name": "z",
+      "unicode": 122,
+      "production_name": "z"
+    },
+    {
+      "name": "ordfeminine",
+      "unicode": 170,
+      "production_name": "ordfeminine"
+    },
+    {
+      "name": "ordmasculine",
+      "unicode": 186,
+      "production_name": "ordmasculine"
+    },
+    {
+      "name": "Agrave",
+      "unicode": 192,
+      "production_name": "Agrave"
+    },
+    {
+      "name": "Aacute",
+      "unicode": 193,
+      "production_name": "Aacute"
+    },
+    {
+      "name": "Acircumflex",
+      "unicode": 194,
+      "production_name": "Acircumflex"
+    },
+    {
+      "name": "Atilde",
+      "unicode": 195,
+      "production_name": "Atilde"
+    },
+    {
+      "name": "Adieresis",
+      "unicode": 196,
+      "production_name": "Adieresis"
+    },
+    {
+      "name": "Aring",
+      "unicode": 197,
+      "production_name": "Aring"
+    },
+    {
+      "name": "AE",
+      "unicode": 198,
+      "production_name": "AE"
+    },
+    {
+      "name": "Ccedilla",
+      "unicode": 199,
+      "production_name": "Ccedilla"
+    },
+    {
+      "name": "Egrave",
+      "unicode": 200,
+      "production_name": "Egrave"
+    },
+    {
+      "name": "Eacute",
+      "unicode": 201,
+      "production_name": "Eacute"
+    },
+    {
+      "name": "Ecircumflex",
+      "unicode": 202,
+      "production_name": "Ecircumflex"
+    },
+    {
+      "name": "Edieresis",
+      "unicode": 203,
+      "production_name": "Edieresis"
+    },
+    {
+      "name": "Igrave",
+      "unicode": 204,
+      "production_name": "Igrave"
+    },
+    {
+      "name": "Iacute",
+      "unicode": 205,
+      "production_name": "Iacute"
+    },
+    {
+      "name": "Icircumflex",
+      "unicode": 206,
+      "production_name": "Icircumflex"
+    },
+    {
+      "name": "Idieresis",
+      "unicode": 207,
+      "production_name": "Idieresis"
+    },
+    {
+      "name": "Eth",
+      "unicode": 208,
+      "production_name": "Eth"
+    },
+    {
+      "name": "Ntilde",
+      "unicode": 209,
+      "production_name": "Ntilde"
+    },
+    {
+      "name": "Ograve",
+      "unicode": 210,
+      "production_name": "Ograve"
+    },
+    {
+      "name": "Oacute",
+      "unicode": 211,
+      "production_name": "Oacute"
+    },
+    {
+      "name": "Ocircumflex",
+      "unicode": 212,
+      "production_name": "Ocircumflex"
+    },
+    {
+      "name": "Otilde",
+      "unicode": 213,
+      "production_name": "Otilde"
+    },
+    {
+      "name": "Odieresis",
+      "unicode": 214,
+      "production_name": "Odieresis"
+    },
+    {
+      "name": "Oslash",
+      "unicode": 216,
+      "production_name": "Oslash"
+    },
+    {
+      "name": "Ugrave",
+      "unicode": 217,
+      "production_name": "Ugrave"
+    },
+    {
+      "name": "Uacute",
+      "unicode": 218,
+      "production_name": "Uacute"
+    },
+    {
+      "name": "Ucircumflex",
+      "unicode": 219,
+      "production_name": "Ucircumflex"
+    },
+    {
+      "name": "Udieresis",
+      "unicode": 220,
+      "production_name": "Udieresis"
+    },
+    {
+      "name": "Yacute",
+      "unicode": 221,
+      "production_name": "Yacute"
+    },
+    {
+      "name": "Thorn",
+      "unicode": 222,
+      "production_name": "Thorn"
+    },
+    {
+      "name": "germandbls",
+      "unicode": 223,
+      "production_name": "germandbls"
+    },
+    {
+      "name": "agrave",
+      "unicode": 224,
+      "production_name": "agrave"
+    },
+    {
+      "name": "aacute",
+      "unicode": 225,
+      "production_name": "aacute"
+    },
+    {
+      "name": "acircumflex",
+      "unicode": 226,
+      "production_name": "acircumflex"
+    },
+    {
+      "name": "atilde",
+      "unicode": 227,
+      "production_name": "atilde"
+    },
+    {
+      "name": "adieresis",
+      "unicode": 228,
+      "production_name": "adieresis"
+    },
+    {
+      "name": "aring",
+      "unicode": 229,
+      "production_name": "aring"
+    },
+    {
+      "name": "ae",
+      "unicode": 230,
+      "production_name": "ae"
+    },
+    {
+      "name": "ccedilla",
+      "unicode": 231,
+      "production_name": "ccedilla"
+    },
+    {
+      "name": "egrave",
+      "unicode": 232,
+      "production_name": "egrave"
+    },
+    {
+      "name": "eacute",
+      "unicode": 233,
+      "production_name": "eacute"
+    },
+    {
+      "name": "ecircumflex",
+      "unicode": 234,
+      "production_name": "ecircumflex"
+    },
+    {
+      "name": "edieresis",
+      "unicode": 235,
+      "production_name": "edieresis"
+    },
+    {
+      "name": "igrave",
+      "unicode": 236,
+      "production_name": "igrave"
+    },
+    {
+      "name": "iacute",
+      "unicode": 237,
+      "production_name": "iacute"
+    },
+    {
+      "name": "icircumflex",
+      "unicode": 238,
+      "production_name": "icircumflex"
+    },
+    {
+      "name": "idieresis",
+      "unicode": 239,
+      "production_name": "idieresis"
+    },
+    {
+      "name": "eth",
+      "unicode": 240,
+      "production_name": "eth"
+    },
+    {
+      "name": "ntilde",
+      "unicode": 241,
+      "production_name": "ntilde"
+    },
+    {
+      "name": "ograve",
+      "unicode": 242,
+      "production_name": "ograve"
+    },
+    {
+      "name": "oacute",
+      "unicode": 243,
+      "production_name": "oacute"
+    },
+    {
+      "name": "ocircumflex",
+      "unicode": 244,
+      "production_name": "ocircumflex"
+    },
+    {
+      "name": "otilde",
+      "unicode": 245,
+      "production_name": "otilde"
+    },
+    {
+      "name": "odieresis",
+      "unicode": 246,
+      "production_name": "odieresis"
+    },
+    {
+      "name": "oslash",
+      "unicode": 248,
+      "production_name": "oslash"
+    },
+    {
+      "name": "ugrave",
+      "unicode": 249,
+      "production_name": "ugrave"
+    },
+    {
+      "name": "uacute",
+      "unicode": 250,
+      "production_name": "uacute"
+    },
+    {
+      "name": "ucircumflex",
+      "unicode": 251,
+      "production_name": "ucircumflex"
+    },
+    {
+      "name": "udieresis",
+      "unicode": 252,
+      "production_name": "udieresis"
+    },
+    {
+      "name": "yacute",
+      "unicode": 253,
+      "production_name": "yacute"
+    },
+    {
+      "name": "thorn",
+      "unicode": 254,
+      "production_name": "thorn"
+    },
+    {
+      "name": "ydieresis",
+      "unicode": 255,
+      "production_name": "ydieresis"
+    },
+    {
+      "name": "Amacron",
+      "unicode": 256,
+      "production_name": "Amacron"
+    },
+    {
+      "name": "amacron",
+      "unicode": 257,
+      "production_name": "amacron"
+    },
+    {
+      "name": "Abreve",
+      "unicode": 258,
+      "production_name": "Abreve"
+    },
+    {
+      "name": "abreve",
+      "unicode": 259,
+      "production_name": "abreve"
+    },
+    {
+      "name": "Aogonek",
+      "unicode": 260,
+      "production_name": "Aogonek"
+    },
+    {
+      "name": "aogonek",
+      "unicode": 261,
+      "production_name": "aogonek"
+    },
+    {
+      "name": "Cacute",
+      "unicode": 262,
+      "production_name": "Cacute"
+    },
+    {
+      "name": "cacute",
+      "unicode": 263,
+      "production_name": "cacute"
+    },
+    {
+      "name": "Cdotaccent",
+      "unicode": 266,
+      "production_name": "Cdotaccent"
+    },
+    {
+      "name": "cdotaccent",
+      "unicode": 267,
+      "production_name": "cdotaccent"
+    },
+    {
+      "name": "Ccaron",
+      "unicode": 268,
+      "production_name": "Ccaron"
+    },
+    {
+      "name": "ccaron",
+      "unicode": 269,
+      "production_name": "ccaron"
+    },
+    {
+      "name": "Dcaron",
+      "unicode": 270,
+      "production_name": "Dcaron"
+    },
+    {
+      "name": "dcaron",
+      "unicode": 271,
+      "production_name": "dcaron"
+    },
+    {
+      "name": "Dcroat",
+      "unicode": 272,
+      "production_name": "Dcroat"
+    },
+    {
+      "name": "dcroat",
+      "unicode": 273,
+      "production_name": "dcroat"
+    },
+    {
+      "name": "Emacron",
+      "unicode": 274,
+      "production_name": "Emacron"
+    },
+    {
+      "name": "emacron",
+      "unicode": 275,
+      "production_name": "emacron"
+    },
+    {
+      "name": "Edotaccent",
+      "unicode": 278,
+      "production_name": "Edotaccent"
+    },
+    {
+      "name": "edotaccent",
+      "unicode": 279,
+      "production_name": "edotaccent"
+    },
+    {
+      "name": "Eogonek",
+      "unicode": 280,
+      "production_name": "Eogonek"
+    },
+    {
+      "name": "eogonek",
+      "unicode": 281,
+      "production_name": "eogonek"
+    },
+    {
+      "name": "Ecaron",
+      "unicode": 282,
+      "production_name": "Ecaron"
+    },
+    {
+      "name": "ecaron",
+      "unicode": 283,
+      "production_name": "ecaron"
+    },
+    {
+      "name": "Gbreve",
+      "unicode": 286,
+      "production_name": "Gbreve"
+    },
+    {
+      "name": "gbreve",
+      "unicode": 287,
+      "production_name": "gbreve"
+    },
+    {
+      "name": "Gdotaccent",
+      "unicode": 288,
+      "production_name": "Gdotaccent"
+    },
+    {
+      "name": "gdotaccent",
+      "unicode": 289,
+      "production_name": "gdotaccent"
+    },
+    {
+      "name": "Gcommaaccent",
+      "unicode": 290,
+      "production_name": "uni0122"
+    },
+    {
+      "name": "gcommaaccent",
+      "unicode": 291,
+      "production_name": "uni0123"
+    },
+    {
+      "name": "Hbar",
+      "unicode": 294,
+      "production_name": "Hbar"
+    },
+    {
+      "name": "hbar",
+      "unicode": 295,
+      "production_name": "hbar"
+    },
+    {
+      "name": "Imacron",
+      "unicode": 298,
+      "production_name": "Imacron"
+    },
+    {
+      "name": "imacron",
+      "unicode": 299,
+      "production_name": "imacron"
+    },
+    {
+      "name": "Iogonek",
+      "unicode": 302,
+      "production_name": "Iogonek"
+    },
+    {
+      "name": "iogonek",
+      "unicode": 303,
+      "production_name": "iogonek"
+    },
+    {
+      "name": "Idotaccent",
+      "unicode": 304,
+      "production_name": "Idotaccent"
+    },
+    {
+      "name": "idotless",
+      "unicode": 305,
+      "production_name": "dotlessi"
+    },
+    {
+      "name": "Kcommaaccent",
+      "unicode": 310,
+      "production_name": "uni0136"
+    },
+    {
+      "name": "kcommaaccent",
+      "unicode": 311,
+      "production_name": "uni0137"
+    },
+    {
+      "name": "Lacute",
+      "unicode": 313,
+      "production_name": "Lacute"
+    },
+    {
+      "name": "lacute",
+      "unicode": 314,
+      "production_name": "lacute"
+    },
+    {
+      "name": "Lcommaaccent",
+      "unicode": 315,
+      "production_name": "uni013B"
+    },
+    {
+      "name": "lcommaaccent",
+      "unicode": 316,
+      "production_name": "uni013C"
+    },
+    {
+      "name": "Lcaron",
+      "unicode": 317,
+      "production_name": "Lcaron"
+    },
+    {
+      "name": "lcaron",
+      "unicode": 318,
+      "production_name": "lcaron"
+    },
+    {
+      "name": "Lslash",
+      "unicode": 321,
+      "production_name": "Lslash"
+    },
+    {
+      "name": "lslash",
+      "unicode": 322,
+      "production_name": "lslash"
+    },
+    {
+      "name": "Nacute",
+      "unicode": 323,
+      "production_name": "Nacute"
+    },
+    {
+      "name": "nacute",
+      "unicode": 324,
+      "production_name": "nacute"
+    },
+    {
+      "name": "Ncommaaccent",
+      "unicode": 325,
+      "production_name": "uni0145"
+    },
+    {
+      "name": "ncommaaccent",
+      "unicode": 326,
+      "production_name": "uni0146"
+    },
+    {
+      "name": "Ncaron",
+      "unicode": 327,
+      "production_name": "Ncaron"
+    },
+    {
+      "name": "ncaron",
+      "unicode": 328,
+      "production_name": "ncaron"
+    },
+    {
+      "name": "Ohungarumlaut",
+      "unicode": 336,
+      "production_name": "Ohungarumlaut"
+    },
+    {
+      "name": "ohungarumlaut",
+      "unicode": 337,
+      "production_name": "ohungarumlaut"
+    },
+    {
+      "name": "OE",
+      "unicode": 338,
+      "production_name": "OE"
+    },
+    {
+      "name": "oe",
+      "unicode": 339,
+      "production_name": "oe"
+    },
+    {
+      "name": "Racute",
+      "unicode": 340,
+      "production_name": "Racute"
+    },
+    {
+      "name": "racute",
+      "unicode": 341,
+      "production_name": "racute"
+    },
+    {
+      "name": "Rcaron",
+      "unicode": 344,
+      "production_name": "Rcaron"
+    },
+    {
+      "name": "rcaron",
+      "unicode": 345,
+      "production_name": "rcaron"
+    },
+    {
+      "name": "Sacute",
+      "unicode": 346,
+      "production_name": "Sacute"
+    },
+    {
+      "name": "sacute",
+      "unicode": 347,
+      "production_name": "sacute"
+    },
+    {
+      "name": "Scedilla",
+      "unicode": 350,
+      "production_name": "Scedilla"
+    },
+    {
+      "name": "scedilla",
+      "unicode": 351,
+      "production_name": "scedilla"
+    },
+    {
+      "name": "Scaron",
+      "unicode": 352,
+      "production_name": "Scaron"
+    },
+    {
+      "name": "scaron",
+      "unicode": 353,
+      "production_name": "scaron"
+    },
+    {
+      "name": "Tcaron",
+      "unicode": 356,
+      "production_name": "Tcaron"
+    },
+    {
+      "name": "tcaron",
+      "unicode": 357,
+      "production_name": "tcaron"
+    },
+    {
+      "name": "Umacron",
+      "unicode": 362,
+      "production_name": "Umacron"
+    },
+    {
+      "name": "umacron",
+      "unicode": 363,
+      "production_name": "umacron"
+    },
+    {
+      "name": "Uring",
+      "unicode": 366,
+      "production_name": "Uring"
+    },
+    {
+      "name": "uring",
+      "unicode": 367,
+      "production_name": "uring"
+    },
+    {
+      "name": "Uhungarumlaut",
+      "unicode": 368,
+      "production_name": "Uhungarumlaut"
+    },
+    {
+      "name": "uhungarumlaut",
+      "unicode": 369,
+      "production_name": "uhungarumlaut"
+    },
+    {
+      "name": "Uogonek",
+      "unicode": 370,
+      "production_name": "Uogonek"
+    },
+    {
+      "name": "uogonek",
+      "unicode": 371,
+      "production_name": "uogonek"
+    },
+    {
+      "name": "Wcircumflex",
+      "unicode": 372,
+      "production_name": "Wcircumflex"
+    },
+    {
+      "name": "wcircumflex",
+      "unicode": 373,
+      "production_name": "wcircumflex"
+    },
+    {
+      "name": "Ycircumflex",
+      "unicode": 374,
+      "production_name": "Ycircumflex"
+    },
+    {
+      "name": "ycircumflex",
+      "unicode": 375,
+      "production_name": "ycircumflex"
+    },
+    {
+      "name": "Ydieresis",
+      "unicode": 376,
+      "production_name": "Ydieresis"
+    },
+    {
+      "name": "Zacute",
+      "unicode": 377,
+      "production_name": "Zacute"
+    },
+    {
+      "name": "zacute",
+      "unicode": 378,
+      "production_name": "zacute"
+    },
+    {
+      "name": "Zdotaccent",
+      "unicode": 379,
+      "production_name": "Zdotaccent"
+    },
+    {
+      "name": "zdotaccent",
+      "unicode": 380,
+      "production_name": "zdotaccent"
+    },
+    {
+      "name": "Zcaron",
+      "unicode": 381,
+      "production_name": "Zcaron"
+    },
+    {
+      "name": "zcaron",
+      "unicode": 382,
+      "production_name": "zcaron"
+    },
+    {
+      "name": "Scommaaccent",
+      "unicode": 536,
+      "production_name": "uni0218"
+    },
+    {
+      "name": "scommaaccent",
+      "unicode": 537,
+      "production_name": "uni0219"
+    },
+    {
+      "name": "Tcommaaccent",
+      "unicode": 538,
+      "production_name": "uni021A"
+    },
+    {
+      "name": "tcommaaccent",
+      "unicode": 539,
+      "production_name": "uni021B"
+    },
+    {
+      "name": "jdotless",
+      "unicode": 567,
+      "production_name": "uni0237"
+    },
+    {
+      "name": "Wgrave",
+      "unicode": 7808,
+      "production_name": "Wgrave"
+    },
+    {
+      "name": "wgrave",
+      "unicode": 7809,
+      "production_name": "wgrave"
+    },
+    {
+      "name": "Wacute",
+      "unicode": 7810,
+      "production_name": "Wacute"
+    },
+    {
+      "name": "wacute",
+      "unicode": 7811,
+      "production_name": "wacute"
+    },
+    {
+      "name": "Wdieresis",
+      "unicode": 7812,
+      "production_name": "Wdieresis"
+    },
+    {
+      "name": "wdieresis",
+      "unicode": 7813,
+      "production_name": "wdieresis"
+    },
+    {
+      "name": "Germandbls",
+      "unicode": 7838,
+      "production_name": "uni1E9E"
+    },
+    {
+      "name": "Ygrave",
+      "unicode": 7922,
+      "production_name": "Ygrave"
+    },
+    {
+      "name": "ygrave",
+      "unicode": 7923,
+      "production_name": "ygrave"
+    },
+    {
+      "name": "idotaccent",
+      "unicode": null,
+      "production_name": "i.loclTRK"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-Copyright (c) 2026 Nicolas Gros.
+Copyright 2026 The Kleyos Project Authors (https://github.com/nicro33/kleyos-font)
 Reserved Font Name: Kleyos
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.

@@ -1,54 +1,57 @@
-"""Package the published binaries and QA evidence; run from any directory."""
-from pathlib import Path
+"""Package the current Kleyos release and verify the archive contents."""
 import hashlib
 import json
+from pathlib import Path
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '1.2.0'
+QA = "qa/release-1.3.0"
+
 
 def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    with path.open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
 
-payload = [ROOT / p for p in (
-    'AUTHORS.txt', 'OFL.txt', 'README.md', 'CHANGELOG.md', 'FONTLOG.txt',
-    'manifest.json', 'css/kleyos.css', 'documentation/PUBLICATION.md',
-    'qa/Kleyos-1.2.0-QA-Report.md', 'qa/Kleyos-1.2.0-Specimen.png',
-    'qa/Webfont-OTS.json', 'qa/i31-VALIDATION.json',
-    'qa/i31-NATIVE_RENDER.json', 'qa/requirements.txt',
-)]
-for folder in ('fonts', 'sources', 'qa/googlefonts'):
-    payload.extend(p for p in (ROOT / folder).rglob('*')
-        if p.is_file() and p.suffix not in ('.log', '.pyc')
-        and '__pycache__' not in p.parts)
-payload = sorted(set(payload))
-for path in payload:
-    assert path.is_file(), path
-checksums = ROOT / 'SHA256SUMS.txt'
-checksums.write_text(''.join(f'{sha(p)}  {p.relative_to(ROOT).as_posix()}\n' for p in payload))
-payload.append(checksums)
 
-manifest = json.loads((ROOT / 'manifest.json').read_text())
-for role in manifest['fonts']:
-    for format in ('ttf', 'woff2'):
-        assert sha(ROOT / role[format]['path']) == role[format]['sha256']
+def package():
+    manifest = json.loads((ROOT / "manifest.json").read_text())
+    version = manifest["version"]
+    family, = manifest["fonts"]
+    payload = {
+        "AUTHORS.txt", "CHANGELOG.md", "DESCRIPTION.en_us.html", "FONTLOG.txt",
+        "OFL.txt", "README.md", "manifest.json", "css/kleyos-regular.css",
+        "documentation/PUBLICATION.md", "documentation/PROVENANCE.md",
+        "documentation/RELEASE-1.3.0.md", "sources/build_public.py",
+        "sources/package_public.py", "sources/requirements-build.lock",
+        "sources/gf-latin-core-map.json", "sources/test_web.py",
+        manifest["source"]["path"],
+        *(p.relative_to(ROOT).as_posix() for p in (ROOT / QA).iterdir() if p.is_file()),
+    }
+    for kind in ("ttf", "woff2"):
+        entry = family[kind]
+        if sha(ROOT / entry["path"]) != entry["sha256"]:
+            raise ValueError(f"Font checksum mismatch: {entry['path']}")
+        payload.add(entry["path"])
+    checksums = {name: sha(ROOT / name) for name in sorted(payload)}
+    checksums_path = ROOT / "SHA256SUMS.txt"
+    checksums_path.write_text("".join(f"{digest}  {name}\n" for name, digest in checksums.items()))
+    payload.add(checksums_path.name)
+    folder = f"Kleyos-{version}"
+    archive = ROOT / "dist" / f"{folder}-Public-Release-RFN.zip"
+    with zipfile.ZipFile(archive, "w") as zipped:
+        for name in sorted(payload):
+            info = zipfile.ZipInfo(f"{folder}/{name}", (2026, 11, 15, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            zipped.writestr(info, (ROOT / name).read_bytes(), compresslevel=9)
+    with zipfile.ZipFile(archive) as zipped:
+        assert zipped.testzip() is None
+        for name, digest in checksums.items():
+            assert hashlib.sha256(zipped.read(f"{folder}/{name}")).hexdigest() == digest, name
+    digest = sha(archive)
+    archive.with_suffix(".zip.sha256").write_text(f"{digest}  {archive.name}\n")
+    print(f"{archive.name}: {len(payload)} files, SHA-256 {digest}")
 
-archive = ROOT / f'dist/Kleyos-{VERSION}-Public-Release-RFN.zip'
-with zipfile.ZipFile(archive, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as out:
-    for p in sorted(payload):
-        name = f'Kleyos-{VERSION}/' + p.relative_to(ROOT).as_posix()
-        info = zipfile.ZipInfo(name, (2026, 10, 28, 0, 0, 0))
-        info.compress_type = zipfile.ZIP_DEFLATED
-        info.external_attr = 0o100644 << 16
-        out.writestr(info, p.read_bytes())
-with zipfile.ZipFile(archive) as check:
-    assert check.testzip() is None
-    for role in manifest['fonts']:
-        for format in ('ttf', 'woff2'):
-            entry = role[format]
-            data = check.read(f'Kleyos-{VERSION}/' + entry['path'])
-            assert hashlib.sha256(data).hexdigest() == entry['sha256']
-archive.with_suffix(archive.suffix + '.sha256').write_text(f'{sha(archive)}  {archive.name}\n')
-print(json.dumps({'archive': str(archive), 'file_count': len(payload),
-    'size_bytes': archive.stat().st_size, 'sha256': sha(archive),
-    'font_hashes_match_manifest': True, 'zip_integrity': True}))
+
+if __name__ == "__main__":
+    package()

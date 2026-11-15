@@ -1,81 +1,45 @@
 {
   "name": "Kleyos",
-  "version": "1.2.0",
-  "date": "2026-10-28",
-  "source_iteration": "H2-i31-Assemblages",
+  "version": "1.3.0",
+  "source_iteration": "i33",
+  "source": {
+    "path": "sources/KleyosMaster.ufoz",
+    "sha256": "4b3b3602e8d2664a187759841ccc708cd975ceed8d88eb7cf8452713a3fb7dc1",
+    "size_bytes": 468197
+  },
+  "source_archive_sha256": "fdb9b8394a5c5b4b878606592b78b5d791f73eef13b9b172d1f5a72b7cda9fa7",
+  "source_commit": "9066724660e004dc87ba0a10972fd59eaa2ad3eb",
   "license": "OFL-1.1",
   "reserved_font_name": "Kleyos",
   "repository": "https://github.com/nicro33/kleyos-font",
-  "tag": "v1.2.0",
-  "source_drawings_and_positioning_unchanged": true,
-  "fontbakery_googlefonts_acceptance": false,
+  "tag": "v1.3.0",
   "fonts": [
     {
-      "role": "Display",
-      "source": "sources/validated-i31/Kleyos-Display-i31-Assemblages.ttf",
-      "source_sha256": "6b6b5ffa2a7b5b5f22ae86189be35bbf091fc5ba3e65662a1951f74e60cd016d",
-      "family": "Kleyos Display",
-      "public_semver": "1.2.0",
-      "opentype_version": "1.310",
-      "identical_source_tables_except_head_and_name": [
-        "hhea",
-        "maxp",
-        "OS/2",
-        "hmtx",
-        "cmap",
-        "loca",
-        "glyf",
-        "kern",
-        "post",
-        "GPOS"
-      ],
-      "woff2_roundtrip_tables_match": true,
-      "codepoints": 170,
+      "family": "Kleyos",
+      "style": "Regular",
+      "opentype_version": "1.411",
+      "codepoints": 334,
+      "glyph_count": 340,
+      "space_widths": {
+        "U+0020": 250,
+        "U+00A0": 250,
+        "U+202F": 125
+      },
       "ttf": {
-        "path": "fonts/ttf/Kleyos-Display.ttf",
-        "sha256": "a977fdaaef56c96d35c236c99a0e0f04fffd67783176ae13e8fad1ea8d0c21c3",
-        "size_bytes": 171624
+        "path": "fonts/ttf/Kleyos-Regular.ttf",
+        "sha256": "bfcb244510ed27f2a87dd26ec31e00fe7f39c14740184a894bc96bd18ff9d14d",
+        "size_bytes": 588364
       },
       "woff2": {
-        "path": "fonts/woff2/Kleyos-Display.woff2",
-        "sha256": "9c03ae7c881a68bab7336ffdbf3d60b48e4535899862b97bb5d90de317d60b7a",
-        "size_bytes": 29104
-      }
-    },
-    {
-      "role": "Text",
-      "source": "sources/validated-i31/Kleyos-Text-i31-Assemblages.ttf",
-      "source_sha256": "6cc2aacb5555222b59297da16360df3e225fe879a7fb5bada46c8920044d8478",
-      "family": "Kleyos Text",
-      "public_semver": "1.2.0",
-      "opentype_version": "1.310",
-      "identical_source_tables_except_head_and_name": [
-        "hhea",
-        "maxp",
-        "OS/2",
-        "hmtx",
-        "cmap",
-        "loca",
-        "glyf",
-        "kern",
-        "post",
-        "GPOS"
-      ],
-      "woff2_roundtrip_tables_match": true,
-      "codepoints": 170,
-      "ttf": {
-        "path": "fonts/ttf/Kleyos-Text.ttf",
-        "sha256": "b5b6b2846383bf628af6d2b69eb7ffb48b51c1f8e06c035a83a070f046ffa69c",
-        "size_bytes": 171588
-      },
-      "woff2": {
-        "path": "fonts/woff2/Kleyos-Text.woff2",
-        "sha256": "436b9a49963dd47b6c123aebe9ffcd90169cf68067c73744e989f480ff5c2712",
-        "size_bytes": 29048
+        "path": "fonts/woff2/Kleyos-Regular.woff2",
+        "sha256": "0e071243a41b9f5493494f6b9f3f74f6e8b6f2b629bea13955e36179ce110a0d",
+        "size_bytes": 70904
       }
     }
   ],
-  "tag_status": "not_created_on_remote",
-  "immutable_web_ref": "b4412dec8b36b763e583524f922d0ebc2b91d3d6",
-  "publication_date": "2026-10-29"
+  "latin_core": {
+    "reference_revision": "0ac0e515473e39247683ed473fd74728671e2364",
+    "entries_checked": 324,
+    "missing": []
+  }
 }

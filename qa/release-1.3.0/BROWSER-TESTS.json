@@ -1,0 +1,42 @@
+[
+  {
+    "engine": "chromium",
+    "version": "151.0.7922.34",
+    "transport": "http",
+    "woff2_sha256": "0e071243a41b9f5493494f6b9f3f74f6e8b6f2b629bea13955e36179ce110a0d",
+    "http_status": 200,
+    "passed": true,
+    "fonts": [
+      [
+        "Kleyos",
+        "loaded"
+      ]
+    ],
+    "normalization": [
+      0,
+      0,
+      0
+    ],
+    "overflow": false
+  },
+  {
+    "engine": "firefox",
+    "version": "153.0",
+    "transport": "http",
+    "woff2_sha256": "0e071243a41b9f5493494f6b9f3f74f6e8b6f2b629bea13955e36179ce110a0d",
+    "http_status": 200,
+    "passed": true,
+    "fonts": [
+      [
+        "Kleyos",
+        "loaded"
+      ]
+    ],
+    "normalization": [
+      0,
+      0,
+      0
+    ],
+    "overflow": false
+  }
+]

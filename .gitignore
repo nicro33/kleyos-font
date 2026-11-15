@@ -2,3 +2,6 @@ __pycache__/
 *.py[cod]
 .venv/
 qa/googlefonts/*.log
+
+build/
+.venv/

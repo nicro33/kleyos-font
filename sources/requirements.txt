@@ -1,2 +1,1 @@
-fonttools==4.68.0
-brotli==1.2.0
+-r requirements-build.lock

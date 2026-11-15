@@ -1,0 +1,260 @@
+{
+  "method": "HarfBuzz, real aria-labels on 4 outline SVG overlays; no card copy retained in public QA.",
+  "character_spacing": {
+    "U+0020": 250,
+    "U+00A0": 250,
+    "U+202F": 125
+  },
+  "lines": [
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 443.547,
+      "kleyos_px": 443.547,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 367.555,
+      "kleyos_px": 367.555,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 666.768,
+      "kleyos_px": 660.048,
+      "delta_px": -6.72,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 587.808,
+      "kleyos_px": 583.008,
+      "delta_px": -4.8,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Text",
+      "size": 28.0,
+      "earlier_px": 398.58,
+      "kleyos_px": 395.22,
+      "delta_px": -3.36,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P02",
+      "lang": "fr",
+      "role": "Text",
+      "size": 22.0,
+      "earlier_px": 73.568,
+      "kleyos_px": 73.568,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 526.149,
+      "kleyos_px": 526.149,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 591.084,
+      "kleyos_px": 591.084,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 592.032,
+      "kleyos_px": 589.152,
+      "delta_px": -2.88,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 451.008,
+      "kleyos_px": 449.088,
+      "delta_px": -1.92,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 535.344,
+      "kleyos_px": 533.424,
+      "delta_px": -1.92,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Text",
+      "size": 28.0,
+      "earlier_px": 468.188,
+      "kleyos_px": 464.828,
+      "delta_px": -3.36,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "de",
+      "role": "Text",
+      "size": 22.0,
+      "earlier_px": 73.568,
+      "kleyos_px": 73.568,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 587.808,
+      "kleyos_px": 587.808,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 594.36,
+      "kleyos_px": 594.36,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 670.224,
+      "kleyos_px": 665.424,
+      "delta_px": -4.8,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 774.768,
+      "kleyos_px": 768.048,
+      "delta_px": -6.72,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Text",
+      "size": 28.0,
+      "earlier_px": 465.836,
+      "kleyos_px": 461.916,
+      "delta_px": -3.92,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "en",
+      "role": "Text",
+      "size": 22.0,
+      "earlier_px": 73.568,
+      "kleyos_px": 73.568,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 658.418,
+      "kleyos_px": 658.418,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Display",
+      "size": 58.5,
+      "earlier_px": 613.372,
+      "kleyos_px": 613.372,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 645.552,
+      "kleyos_px": 641.712,
+      "delta_px": -3.84,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Text",
+      "size": 48.0,
+      "earlier_px": 756.816,
+      "kleyos_px": 751.056,
+      "delta_px": -5.76,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Text",
+      "size": 28.0,
+      "earlier_px": 441.112,
+      "kleyos_px": 438.312,
+      "delta_px": -2.8,
+      "missing_glyphs": 0
+    },
+    {
+      "card": "P64",
+      "lang": "fr",
+      "role": "Text",
+      "size": 22.0,
+      "earlier_px": 73.568,
+      "kleyos_px": 73.568,
+      "delta_px": 0.0,
+      "missing_glyphs": 0
+    }
+  ]
+}
